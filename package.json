@@ -1,0 +1,24 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Packages are upto date (2025).",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumairq/natours.git"
+  },
+  "author": "Sumair",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sumairq/natours/issues"
+  },
+  "homepage": "https://github.com/sumairq/natours#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "morgan": "^1.10.0"
+  }
+}
