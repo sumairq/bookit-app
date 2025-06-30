@@ -9,6 +9,18 @@ const app = express();
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 }
+// Added this line because it's default is 'simple' in express@5 unlike the previous versions.
+app.set('query parser', 'extended');
+//This middleware makes the req.query mutable like it was in express versions older than 5.
+//https://stackoverflow.com/questions/79597051/express-v5-is-there-any-way-to-modify-req-query
+app.use((req, res, next) => {
+  Object.defineProperty(req, 'query', {
+    ...Object.getOwnPropertyDescriptor(req, 'query'),
+    value: req.query,
+    writable: true,
+  });
+  next();
+});
 app.use(express.json());
 app.use(express.static(`${__dirname}/public`));
 

@@ -43,9 +43,11 @@ const tourSchema = new mongoose.Schema({
     required: [true, 'A tour must have a cover image'],
   },
   images: [String],
+  // using select we can ensure that this field will never be sent to the client.
   createdAt: {
     type: Date,
     default: Date.now(),
+    select: false,
   },
   startDates: [Date],
 });
