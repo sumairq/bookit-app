@@ -8,6 +8,9 @@ router
   .route('/top-5-cheap')
   .get(tourController.aliasTopFiveTours, tourController.getAllTours);
 
+router.route('/tour-stats').get(tourController.getTourStats);
+router.route('/monthly-plan/:year').get(tourController.getMonthlyPlan);
+
 // Create a checkBody middleware
 //Check if body contains the name and price property
 //If not, send back 400 (bad request)
