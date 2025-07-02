@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const slugify = require('slugify');
 
 const tourSchema = new mongoose.Schema(
   {
@@ -8,6 +9,7 @@ const tourSchema = new mongoose.Schema(
       unique: true,
       trim: true,
     },
+    slug: String,
     duration: {
       type: Number,
       required: [true, 'A tour must have a duration'],
@@ -51,6 +53,10 @@ const tourSchema = new mongoose.Schema(
       select: false,
     },
     startDates: [Date],
+    secretTour: {
+      type: Boolean,
+      default: false,
+    },
   },
   {
     toJSON: { virtuals: true },
@@ -64,9 +70,28 @@ tourSchema.virtual('durationWeeks').get(function () {
 });
 
 //DOCUMENT MIDDLEWARE: runs before the save() command and create() command
-// Note: insertMany() will not trigger the save middleware
-tourSchema.pre('save', function () {
-  console.log(this);
+// Note: insertMany() or findOneAndUpdate() or findByIdAndUpdate() will not trigger the save middleware
+// For the same hook we can have multiple pre and post middlewares . 'save' is a hook for example
+tourSchema.pre('save', function (next) {
+  this.slug = slugify(this.name, { lower: true });
+  next();
+});
+
+// tourSchema.pre('save', function (next) {
+//   console.log('Will save the document...');
+//   next();
+// });
+
+// // Runs after saving the document , instead of this keyword we will have access to the saved document
+// tourSchema.post('save', function (doc, next) {
+//   console.log(doc);
+//   next();
+// });
+
+// QUERY MIDDLEWARE
+tourSchema.pre('find', function (next) {
+  // here the this keyword will refer to the current query and not the current document
+  next();
 });
 
 const Tour = mongoose.model('Tour', tourSchema);
