@@ -8,6 +8,8 @@ const tourSchema = new mongoose.Schema(
       required: [true, 'A tour must have a name'],
       unique: true,
       trim: true,
+      maxLength: [40, 'A tour name must have less or equal to 40 characters'],
+      minLength: [10, 'A tour name must have more or equal to 40 characters'],
     },
     slug: String,
     duration: {
@@ -21,10 +23,16 @@ const tourSchema = new mongoose.Schema(
     difficulty: {
       type: String,
       required: [true, 'A tour must have a difficulty'],
+      enum: {
+        values: ['easy', 'medium', 'difficult'],
+        message: 'Difficulty is either : easy, medium, difficult',
+      },
     },
     ratingsAverage: {
       type: Number,
       default: 4.5,
+      min: [1, 'Rating must be above 1.0'],
+      max: [1, 'Rating must be below 5.0'],
     },
     ratingsQuantity: {
       type: Number,
@@ -89,8 +97,26 @@ tourSchema.pre('save', function (next) {
 // });
 
 // QUERY MIDDLEWARE
-tourSchema.pre('find', function (next) {
+// We are using the regex /^find/ so that our middleware catches all cases of find, findOneAndDelete, findOneAndUpdate etc
+tourSchema.pre(/^find/, function (next) {
   // here the this keyword will refer to the current query and not the current document
+  this.find({ secretTour: { $eq: false } });
+
+  this.start = Date.now();
+  next();
+});
+
+tourSchema.post(/^find/, function (docs, next) {
+  console.log(`Query took ${Date.now() - this.start} milliseconds`);
+  console.log(docs);
+  next();
+});
+
+// AGGREGATION MIDDLEWARE
+tourSchema.pre('aggregate', function (next) {
+  // in the course we use {$ne: false} because we don't do any data migration to update the old data in the course
+  this.pipeline().unshift({ $match: { secretTour: { $eq: false } } });
+  console.log(this.pipeline());
   next();
 });
 
