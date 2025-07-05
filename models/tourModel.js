@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const slugify = require('slugify');
+const validator = require('validator');
 
 const tourSchema = new mongoose.Schema(
   {
@@ -10,6 +11,8 @@ const tourSchema = new mongoose.Schema(
       trim: true,
       maxLength: [40, 'A tour name must have less or equal to 40 characters'],
       minLength: [10, 'A tour name must have more or equal to 40 characters'],
+      // the isApha is not really useful  in this case as it only accepts letters without any spaces in between (vid-109)
+      // validate: [validator.isAlpha, 'Tour name must only contain characters'],
     },
     slug: String,
     duration: {
@@ -39,7 +42,19 @@ const tourSchema = new mongoose.Schema(
       default: 0,
     },
     price: { type: Number, required: [true, 'A tour must have a price'] },
-    priceDiscount: Number,
+    priceDiscount: {
+      type: Number,
+      validate: {
+        validator: function (value) {
+          // this only points to current doc on NEW document creation (vid-109)
+          // validator npm package is also useful when you want prebuilt custom validators
+          //https://github.com/validatorjs/validator.js/
+          return value < this.price; // 250 < 200
+        },
+        // {VALUE} is unique to mongo db and it has nothing to do with javascript
+        message: 'Discount price ({VALUE}) should be below the regular price.',
+      },
+    },
     summary: {
       type: String,
       trim: true,
