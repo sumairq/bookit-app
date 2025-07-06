@@ -14,6 +14,13 @@ const handleDuplicateFieldsDB = (err) => {
   return new AppError(message, 400);
 };
 
+const handleValidationErrorDB = (err) => {
+  const errors = Object.values(err.errors).map((el) => el.message);
+  // In the latest version of mongodb errmsg is nested within errorResponse
+  const message = `Invalid input data. ${errors.join('. ')}`;
+  return new AppError(message, 400);
+};
+
 const sendErrorDev = (err, res) => {
   res.status(err.statusCode).json({
     status: err.status,
@@ -63,6 +70,15 @@ module.exports = (err, _req, res, _next) => {
     if (error.code === 11000) {
       error = handleDuplicateFieldsDB(error);
     }
+
+    if (error.name === 'ValidationError') {
+      error = handleValidationErrorDB(error);
+    }
     sendErrorProd(error, res);
   }
 };
+
+// We can extend for other types of errors by marking them operation in the similar way we have marked the 3 types of mongoose errors above.
+
+// This error handling is quite sophisticated for a small application however can introduce more things like error severity level , for example
+//Error severity level could be  low , medium, high, critical. and we can send email to administrator about the errors depending upon the severity.
