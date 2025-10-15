@@ -9,3 +9,5 @@ A **Node.js** web application for browsing and booking tours. The project includ
 - 💾 Data persistence with **MongoDB**
 
 This project serves as a foundation for a full-featured tour-selling platform built with modern web technologies.
+
+The need to introduce more sophisticated features as we go along with the rest of the blocks of work.
