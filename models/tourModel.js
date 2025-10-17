@@ -13,6 +13,7 @@ const tourSchema = new mongoose.Schema(
       minLength: [10, 'A tour name must have more or equal to 40 characters'],
       // the isApha is not really useful  in this case as it only accepts letters without any spaces in between (vid-109)
       // validate: [validator.isAlpha, 'Tour name must only contain characters'],
+      // Introduce more validations to test new features
     },
     slug: String,
     duration: {
