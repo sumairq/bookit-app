@@ -32,6 +32,10 @@ const tourSchema = new mongoose.Schema(
         message: 'Difficulty is either : easy, medium, difficult',
       },
     },
+    country: {
+      type: String,
+      required: [true, 'A tour must have a country'],
+    },
     ratingsAverage: {
       type: Number,
       default: 4.5,
