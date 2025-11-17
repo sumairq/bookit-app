@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/sumairq/natours#readme",
   "dependencies": {
+    "bcryptjs": "^3.0.3",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "migrate-mongo": "^12.1.3",
