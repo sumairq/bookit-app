@@ -55,6 +55,15 @@ userSchema.pre('save', async function (next) {
   next();
 });
 
+userSchema.pre('save', function (next) {
+  if (!this.isModified('password') || this.isNew) return next();
+
+  //Vid-137 We subtract 1 second because sometimes the timestamp is less than the password ChangedAt field and the new password may not work for some duration of time.
+  // it will ensure that the token is always created after the password has been changed.
+  this.passwordChangedAt = Date.now() - 1000;
+  next();
+});
+
 userSchema.methods.correctPassword = async function (
   candidatePassword,
   userPassword
