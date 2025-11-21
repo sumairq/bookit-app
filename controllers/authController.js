@@ -59,7 +59,6 @@ exports.login = catchAsync(async (req, res, next) => {
 
   //3) If everything ok, send it to client
   createSendToken(user, 200, res);
-  const token = signToken(user._id);
 });
 
 exports.protect = catchAsync(async (req, res, next) => {
