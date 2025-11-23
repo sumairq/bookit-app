@@ -1,6 +1,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const rateLimit = require('express-rate-limit');
+const helmet = require('helmet');
 
 const AppError = require('./utils/appError.js');
 const globalErrorHandler = require('./controllers/errorController.js');
@@ -9,6 +10,10 @@ const userRouter = require('./routes/userRoutes.js');
 
 const app = express();
 // 1) GlOBAL MIDDLEWARES
+// Set Security HTTP headers
+app.use(helmet());
+
+//Development logging
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 }
@@ -32,11 +37,15 @@ app.use((req, res, next) => {
   });
   next();
 });
-app.use(express.json());
+// Body parser, reading data from body into req.body
+app.use(express.json({ limit: '10kb' }));
+// Serving static files
 app.use(express.static(`${__dirname}/public`));
 
+// Test middleware
 app.use((req, res, next) => {
   req.requestTime = new Date().toISOString();
+  // console.log(req.headers)
   next();
 });
 
