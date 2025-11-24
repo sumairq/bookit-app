@@ -113,6 +113,12 @@ const tourSchema = new mongoose.Schema(
         ref: 'User',
       },
     ],
+    reviews: [
+      {
+        type: mongoose.Schema.ObjectId,
+        ref: 'Review',
+      },
+    ],
   },
   {
     toJSON: { virtuals: true },
@@ -123,6 +129,13 @@ const tourSchema = new mongoose.Schema(
 tourSchema.virtual('durationWeeks').get(function () {
   // Improved the number to ensure it rounds off the extra decimal places
   return Number((this.duration / 7).toPrecision(2));
+});
+
+// Virtual Populate
+tourSchema.virtual('reviews', {
+  ref: 'Review',
+  foreignField: 'tour',
+  localField: '_id',
 });
 
 //DOCUMENT MIDDLEWARE: runs before the save() command and create() command
