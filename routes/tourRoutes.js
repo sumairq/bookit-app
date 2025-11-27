@@ -31,6 +31,8 @@ router
   .route('/tours-within/:distance/center/:latlng/unit/:unit')
   .get(tourController.getToursWithin);
 
+router.route('/distances/:latlng/unit/:unit').get(tourController.getDistances);
+
 // Create a checkBody middleware
 //Check if body contains the name and price property
 //If not, send back 400 (bad request)

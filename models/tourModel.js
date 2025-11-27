@@ -189,12 +189,12 @@ tourSchema.post(/^find/, function (docs, next) {
 });
 
 // AGGREGATION MIDDLEWARE
-tourSchema.pre('aggregate', function (next) {
-  // in the course we use {$ne: false} because we don't do any data migration to update the old data in the course
-  this.pipeline().unshift({ $match: { secretTour: { $eq: false } } });
-  console.log(this.pipeline());
-  next();
-});
+// tourSchema.pre('aggregate', function (next) {
+//   // in the course we use {$ne: false} because we don't do any data migration to update the old data in the course
+//   this.pipeline().unshift({ $match: { secretTour: { $eq: false } } });
+//   console.log(this.pipeline());
+//   next();
+// });
 
 const Tour = mongoose.model('Tour', tourSchema);
 
