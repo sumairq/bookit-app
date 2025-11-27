@@ -120,6 +120,10 @@ const tourSchema = new mongoose.Schema(
   }
 );
 
+// tourSchema.index({ price: 1 });
+tourSchema.index({ price: 1, ratingsAverage: -1 });
+tourSchema.index({ slug: 1 });
+
 tourSchema.virtual('durationWeeks').get(function () {
   // Improved the number to ensure it rounds off the extra decimal places
   return Number((this.duration / 7).toPrecision(2));
