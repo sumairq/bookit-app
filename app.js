@@ -1,3 +1,4 @@
+const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
 const rateLimit = require('express-rate-limit');
@@ -13,6 +14,9 @@ const userRouter = require('./routes/userRoutes.js');
 const reviewRouter = require('./routes/reviewRoutes');
 
 const app = express();
+
+app.set('view engine', 'pug');
+app.set('views', path.join(__dirname, 'views'));
 // 1) GlOBAL MIDDLEWARES
 // Set Security HTTP headers
 app.use(helmet());
@@ -78,6 +82,21 @@ app.use((req, res, next) => {
 // 2) ROUTE HANDLERS
 
 // 3) ROUTES
+app.get('/', (req, res) => {
+  res.status(200).render('base');
+});
+
+app.get('/overview', (req, res) => {
+  res.status(200).render('overview', {
+    title: 'All Tours',
+  });
+});
+
+app.get('/overview', (req, res) => {
+  res.status(200).render('overview', {
+    title: 'The Forest Hiker Tour',
+  });
+});
 
 app.use('/api/v1/tours', tourRouter);
 app.use('/api/v1/users', userRouter);
