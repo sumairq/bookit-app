@@ -3,6 +3,7 @@ const express = require('express');
 const morgan = require('morgan');
 const rateLimit = require('express-rate-limit');
 const helmet = require('helmet');
+const cors = require('cors');
 const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
 const hpp = require('hpp');
@@ -19,8 +20,13 @@ const app = express();
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
 // 1) GlOBAL MIDDLEWARES
-// Set Security HTTP headers
-app.use(helmet());
+app.use(cors());
+// Set Security HTTP headers with custom Content Security Policy
+app.use(
+  helmet({
+    contentSecurityPolicy: false,
+  })
+);
 
 //Development logging
 if (process.env.NODE_ENV === 'development') {
