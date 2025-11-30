@@ -5,6 +5,7 @@ const rateLimit = require('express-rate-limit');
 const helmet = require('helmet');
 const cors = require('cors');
 const mongoSanitize = require('express-mongo-sanitize');
+const cookieParser = require('cookie-parser');
 const xss = require('xss-clean');
 const hpp = require('hpp');
 
@@ -20,7 +21,12 @@ const app = express();
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
 // 1) GlOBAL MIDDLEWARES
-app.use(cors());
+app.use(
+  cors({
+    origin: 'http://127.0.0.1:3000',
+    credentials: true,
+  })
+);
 // Set Security HTTP headers with custom Content Security Policy
 app.use(
   helmet({
@@ -54,6 +60,7 @@ app.use((req, res, next) => {
 });
 // Body parser, reading data from body into req.body
 app.use(express.json({ limit: '10kb' }));
+app.use(cookieParser());
 
 // Data sanitization against NoSQL query injection
 app.use(mongoSanitize());
@@ -82,7 +89,7 @@ app.use(express.static(`${__dirname}/public`));
 // Test middleware
 app.use((req, res, next) => {
   req.requestTime = new Date().toISOString();
-  // console.log(req.headers)
+  console.log(req.cookies);
   next();
 });
 
