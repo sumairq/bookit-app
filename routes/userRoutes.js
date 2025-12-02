@@ -1,6 +1,10 @@
 const express = require('express');
+const multer = require('multer');
 const userController = require('../controllers/userController');
 const authController = require('../controllers/authController');
+
+const upload = multer({ dest: 'public/img/users' });
+
 const router = express.Router();
 
 // We use post verb for the signup
@@ -14,20 +18,15 @@ router.patch('/resetPassword/:token', authController.resetPassword);
 // from this point forward this middleware will be applied to all the routes.
 router.use(authController.protect);
 
+router.patch('/updateMyPassword', authController.updatePassword);
+router.get('/me', userController.getMe, userController.getUser);
 router.patch(
-  '/updateMyPassword',
-  authController.protect,
-  authController.updatePassword
+  '/updateMe',
+  userController.uploadUserPhoto,
+  userController.resizeUserPhoto,
+  userController.updateMe
 );
-
-router.get(
-  '/me',
-  authController.protect,
-  userController.getMe,
-  userController.getUser
-);
-router.patch('/updateMe', authController.protect, userController.updateMe);
-router.delete('/deleteMe', authController.protect, userController.deleteMe);
+router.delete('/deleteMe', userController.deleteMe);
 
 router.use(authController.restrictTo('admin'));
 
