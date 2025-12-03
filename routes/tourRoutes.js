@@ -1,22 +1,20 @@
 const express = require('express');
-const tourController = require('../controllers/tourController');
-const authController = require('../controllers/authController');
-const reviewController = require('../controllers/reviewController');
-const reviewRouter = require('../routes/reviewRoutes');
+const tourController = require('./../controllers/tourController');
+const authController = require('./../controllers/authController');
+const reviewRouter = require('./../routes/reviewRoutes');
+
 const router = express.Router();
 
 // router.param('id', tourController.checkID);
 
-//POST /tour/234234ad4/reviews
-//POST /tour/234234ad4/reviews
-//POST /tour/234234ad4/reviews/923423dfda
+// POST /tour/234fad4/reviews
+// GET /tour/234fad4/reviews
 
-// We are basically saying whenever you see a route like this use reviewRouter
 router.use('/:tourId/reviews', reviewRouter);
 
 router
   .route('/top-5-cheap')
-  .get(tourController.aliasTopFiveTours, tourController.getAllTours);
+  .get(tourController.aliasTopTours, tourController.getAllTours);
 
 router.route('/tour-stats').get(tourController.getTourStats);
 router
@@ -30,13 +28,10 @@ router
 router
   .route('/tours-within/:distance/center/:latlng/unit/:unit')
   .get(tourController.getToursWithin);
+// /tours-within?distance=233&center=-40,45&unit=mi
+// /tours-within/233/center/-40,45/unit/mi
 
 router.route('/distances/:latlng/unit/:unit').get(tourController.getDistances);
-
-// Create a checkBody middleware
-//Check if body contains the name and price property
-//If not, send back 400 (bad request)
-// Add it to the post handler stack
 
 router
   .route('/')
@@ -44,7 +39,6 @@ router
   .post(
     authController.protect,
     authController.restrictTo('admin', 'lead-guide'),
-    tourController.checkBody,
     tourController.createTour
   );
 
@@ -54,6 +48,8 @@ router
   .patch(
     authController.protect,
     authController.restrictTo('admin', 'lead-guide'),
+    tourController.uploadTourImages,
+    tourController.resizeTourImages,
     tourController.updateTour
   )
   .delete(
