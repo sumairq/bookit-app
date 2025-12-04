@@ -15,6 +15,7 @@ const tourRouter = require('./routes/tourRoutes.js');
 const userRouter = require('./routes/userRoutes.js');
 const reviewRouter = require('./routes/reviewRoutes');
 const viewRouter = require('./routes/viewRoutes.js');
+const bookingRouter = require('./routes/bookingRoutes.js');
 
 const app = express();
 
@@ -101,6 +102,7 @@ app.use('/', viewRouter);
 app.use('/api/v1/tours', tourRouter);
 app.use('/api/v1/users', userRouter);
 app.use('/api/v1/reviews', reviewRouter);
+app.use('/api/v1/bookings', bookingRouter);
 
 app.all('{*splat}', (req, res, next) => {
   // const err = new Error(`Can't find ${req.originalUrl} on this server!`);
