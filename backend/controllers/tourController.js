@@ -66,6 +66,23 @@ exports.aliasTopTours = (req, res, next) => {
   next();
 };
 
+exports.getTourBySlug = catchAsync(async (req, res, next) => {
+  const tour = await Tour.findOne({ slug: req.params.slug }).populate({
+    path: 'reviews',
+    fields: 'review rating user',
+  });
+
+  if (!tour) {
+    return next(new AppError('No tour found with that name', 404));
+  }
+  res.json({
+    status: 'success',
+    data: {
+      data: tour,
+    },
+  });
+});
+
 exports.getAllTours = factory.getAll(Tour);
 exports.getTour = factory.getOne(Tour, { path: 'reviews' });
 exports.createTour = factory.createOne(Tour);
