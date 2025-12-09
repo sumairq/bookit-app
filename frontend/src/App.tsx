@@ -1,15 +1,18 @@
-import { useEffect } from "react";
-import { api } from "./api/axios";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Overview from "./pages/Overview";
+import "./App.css";
+import MainLayout from "./layout/MainLayout";
 
 function App() {
-  useEffect(() => {
-    api
-      .get("/tours")
-      .then((res) => console.log(res.data))
-      .catch((err) => console.error(err));
-  }, []);
-
-  return <h1>Natours React Frontend</h1>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Overview />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
