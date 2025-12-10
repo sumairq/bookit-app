@@ -3,6 +3,7 @@ import Overview from "./pages/Overview";
 import "./App.css";
 import MainLayout from "./layout/MainLayout";
 import TourDetails from "./pages/TourDetails";
+import LoginPage from "./pages/LoginPage";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Overview />} />
+          <Route path="/login" element={<LoginPage />} />
           <Route path="/tour/:slug" element={<TourDetails />} />
         </Route>
       </Routes>

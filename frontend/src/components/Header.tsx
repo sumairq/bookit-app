@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useAuth } from "../context/useAuth";
 
 interface User {
   name: string;
@@ -10,7 +11,8 @@ interface HeaderProps {
   onLogout?: () => void;
 }
 
-export default function Header({ user, onLogout }: HeaderProps) {
+export default function Header({ onLogout }: HeaderProps) {
+  const { user } = useAuth();
   return (
     <header className="header">
       {/* Left navigation */}

@@ -14,7 +14,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       console.log("Restoring user session...");
 
       try {
-        const res = await api.get("/api/v1/users/me");
+        const res = await api.get("/users/me");
         setUser(res.data.data.data);
       } catch {
         setUser(null);
@@ -26,15 +26,15 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   async function login(email: string, password: string) {
-    await api.post("/api/v1/users/login", { email, password });
+    await api.post("/users/login", { email, password });
 
     // Get user after cookie is set
-    const res = await api.get("/api/v1/users/me");
+    const res = await api.get("/users/me");
     setUser(res.data.data.data);
   }
 
   async function logout() {
-    await api.get("/api/v1/users/logout");
+    await api.get("/users/logout");
     setUser(null);
   }
 
