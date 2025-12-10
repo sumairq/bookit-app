@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Overview from "./pages/Overview";
 import "./App.css";
 import MainLayout from "./layout/MainLayout";
+import TourDetails from "./pages/TourDetails";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Overview />} />
+          <Route path="/tour/:slug" element={<TourDetails />} />
         </Route>
       </Routes>
     </BrowserRouter>
