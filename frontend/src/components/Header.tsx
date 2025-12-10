@@ -1,18 +1,18 @@
 import { Link } from "react-router-dom";
 import { useAuth } from "../context/useAuth";
 
-interface User {
-  name: string;
-  photo: string;
-}
+// interface User {
+//   name: string;
+//   photo: string;
+// }
 
-interface HeaderProps {
-  user?: User | null;
-  onLogout?: () => void;
-}
+// interface HeaderProps {
+//   user?: User | null;
+//   onLogout?: () => void;
+// }
 
-export default function Header({ onLogout }: HeaderProps) {
-  const { user } = useAuth();
+export default function Header() {
+  const { user, logout } = useAuth();
   return (
     <header className="header">
       {/* Left navigation */}
@@ -32,7 +32,7 @@ export default function Header({ onLogout }: HeaderProps) {
         {user ? (
           <>
             {/* Log out button */}
-            <button className="nav__el nav__el--logout" onClick={onLogout}>
+            <button className="nav__el nav__el--logout" onClick={logout}>
               Log out
             </button>
 
