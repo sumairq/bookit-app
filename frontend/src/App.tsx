@@ -15,6 +15,7 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/tour/:slug" element={<TourDetails />} />
           <Route path="/me" element={<AccountPage />} />
+          <Route path="/my-tours" element={<Overview />} />
         </Route>
       </Routes>
     </BrowserRouter>

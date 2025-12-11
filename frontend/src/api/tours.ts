@@ -15,25 +15,25 @@ export interface Location {
   day: number;
 }
 
-export interface Tour {
-  _id: string;
-  name: string;
-  duration: number;
-  maxGroupSize: number;
-  difficulty: string;
-  guides: string[]; // or Guide[] if you want full population later
-  ratingsAverage: number;
-  ratingsQuantity: number;
-  price: number;
-  summary: string;
-  description: string;
-  imageCover: string;
-  images: string[];
-  startLocation: StartLocation;
-  startDates: string[];
-  locations: Location[];
-  slug: string;
-}
+// export interface Tour {
+//   _id: string;
+//   name: string;
+//   duration: number;
+//   maxGroupSize: number;
+//   difficulty: string;
+//   guides: string[]; // or Guide[] if you want full population later
+//   ratingsAverage: number;
+//   ratingsQuantity: number;
+//   price: number;
+//   summary: string;
+//   description: string;
+//   imageCover: string;
+//   images: string[];
+//   startLocation: StartLocation;
+//   startDates: string[];
+//   locations: Location[];
+//   slug: string;
+// }
 
 interface ToursResponse {
   status: string;
