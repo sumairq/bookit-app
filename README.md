@@ -1,20 +1,22 @@
-# Natours — Full Stack Tour Booking Platform
+# Bookit — Full Stack Experiences & Events Booking Platform
 
-Natours is a full-stack web application for browsing and booking tours. It is built using modern web technologies with a clear separation between the frontend and backend in a monorepo structure.
+**Bookit** is a full-stack web application for discovering, exploring, and booking curated experiences and events. It is built using modern web technologies with a clean separation between frontend and backend in a monorepo structure.
 
-The project continues to evolve as more sophisticated features are introduced across different phases of development.
+The platform is designed to be scalable and extensible, supporting real-world booking workflows, authentication, payments, and rich experience detail pages.
 
 ---
 
 ## ✨ Features
 
-- 🧭 Tour listings and detailed tour pages
+- 🎟️ Browse curated experiences and events
+- 📄 Detailed experience pages with maps, schedules, and hosts
 - 👤 User authentication and profile management
 - 💳 Secure booking and payment integration
 - 🗄️ RESTful API built with Express.js
 - 💾 Data persistence using MongoDB
 - ⚛️ Modern React frontend with TypeScript
 - 🔐 JWT-based authentication with secure cookies
+- 🌍 Interactive maps powered by Mapbox
 
 ---
 
@@ -125,7 +127,7 @@ http://localhost:3000
 
 ## 💳 Payments
 
-- Stripe is used for secure tour payments
+- Stripe is used for secure experience payments
 - Checkout sessions are created on the backend
 - Users are redirected from the frontend to Stripe
 
@@ -135,7 +137,7 @@ http://localhost:3000
 
 - Advanced filtering and sorting
 - Admin dashboard
-- Tour analytics
+- Experience analytics
 - Reviews and ratings system
 - Role-based access control
 - Performance optimizations
@@ -167,7 +169,7 @@ http://localhost:3000
 
 ## 📌 Project Purpose
 
-This project serves as a scalable foundation for a full-featured tour-selling platform built with modern full-stack technologies. More advanced features and improvements will be progressively introduced as development continues.
+This project serves as a scalable foundation for a full-featured event/experience selling platform built with modern full-stack technologies. More advanced features and improvements will be progressively introduced as development continues.
 
 ---
 
