@@ -1,4 +1,4 @@
-import type { Review } from "../types/Tour";
+import type { Review } from "../types/Experience";
 
 interface ReviewCardProps {
   review: Review;

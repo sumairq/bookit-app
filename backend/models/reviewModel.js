@@ -1,10 +1,11 @@
 const mongoose = require('mongoose');
-const Tour = require('./tourModel');
+const Experience = require('./experienceModel');
+
 const reviewSchema = new mongoose.Schema(
   {
     review: {
       type: String,
-      required: [true, 'Review can not be empty!'],
+      required: [true, 'Review cannot be empty!'],
     },
     rating: {
       type: Number,
@@ -15,15 +16,18 @@ const reviewSchema = new mongoose.Schema(
       type: Date,
       default: Date.now,
     },
-    tour: {
+
+    // RENAMED: tour → experience
+    experience: {
       type: mongoose.Schema.ObjectId,
-      ref: 'Tour',
-      required: [true, 'Review must belong to a tour.'],
+      ref: 'Experience',
+      required: [true, 'Review must belong to an experience.'],
     },
+
     user: {
       type: mongoose.Schema.ObjectId,
       ref: 'User',
-      required: [true, 'review must belong to a user.'],
+      required: [true, 'Review must belong to a user.'],
     },
   },
   {
@@ -32,17 +36,11 @@ const reviewSchema = new mongoose.Schema(
   }
 );
 
-reviewSchema.index({ tour: 1, user: 1 }, { unique: true });
+// Prevent duplicate reviews: one user per experience
+reviewSchema.index({ experience: 1, user: 1 }, { unique: true });
 
+// Auto-populate user details
 reviewSchema.pre(/^find/, function (next) {
-  //   this.populate({
-  //     path: 'tour',
-  //     select: 'name',
-  //   }).populate({
-  //     path: 'user',
-  //     select: 'name photo',
-  //   });
-
   this.populate({
     path: 'user',
     select: 'name photo',
@@ -50,52 +48,49 @@ reviewSchema.pre(/^find/, function (next) {
   next();
 });
 
-reviewSchema.statics.calcAverageRatings = async function (tourId) {
+// STATIC METHOD: calculate avg ratings + quantity
+reviewSchema.statics.calcAverageRatings = async function (experienceId) {
   const stats = await this.aggregate([
     {
-      $match: { tour: tourId },
+      $match: { experience: experienceId },
     },
     {
       $group: {
-        _id: '$tour',
+        _id: '$experience',
         nRating: { $sum: 1 },
         avgRating: { $avg: '$rating' },
       },
     },
   ]);
 
-  //   console.log(stats);
-
   if (stats.length > 0) {
-    await Tour.findByIdAndUpdate(tourId, {
+    await Experience.findByIdAndUpdate(experienceId, {
       ratingsQuantity: stats[0].nRating,
       ratingsAverage: stats[0].avgRating,
     });
   } else {
-    await Tour.findByIdAndUpdate(tourId, {
+    await Experience.findByIdAndUpdate(experienceId, {
       ratingsQuantity: 0,
       ratingsAverage: 4.5,
     });
   }
 };
 
+// After saving a review
 reviewSchema.post('save', function () {
-  // this points to current review
-
-  this.constructor.calcAverageRatings(this.tour);
+  // this points to the current review
+  this.constructor.calcAverageRatings(this.experience);
 });
 
+// Before findOneAndUpdate or findOneAndDelete
 reviewSchema.pre(/^findOneAnd/, async function (next) {
-  // Clone() method is fix after the mongoose v6 started enforcing query already executed errors
   this.r = await this.clone().findOne();
-  //   console.log(this.r);
   next();
 });
 
+// After findOneAndUpdate/Delete
 reviewSchema.post(/^findOneAnd/, async function () {
-  // await this.findOne(); does NOT work here, query has already executed VID-169
-  //   console.log(this.r);
-  await this.r.constructor.calcAverageRatings(this.r.tour);
+  if (this.r) await this.r.constructor.calcAverageRatings(this.r.experience);
 });
 
 const Review = mongoose.model('Review', reviewSchema);

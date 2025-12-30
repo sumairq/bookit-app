@@ -5,19 +5,34 @@ const bookingController = require('../controllers/bookingController');
 
 const router = express.Router();
 
+// OVERVIEW (ALL EXPERIENCES)
 router.get('/', authController.isLoggedIn, viewsController.getOverview);
 
-router.get('/tour/:slug', authController.isLoggedIn, viewsController.getTour);
-router.get('/login', authController.isLoggedIn, viewsController.getLoginForm);
-router.get('/me', authController.protect, viewsController.getAccount);
-
+// EXPERIENCE DETAIL PAGE
 router.get(
-  '/my-tours',
-  bookingController.createBookingCheckout,
-  authController.protect,
-  viewsController.getMyTours
+  '/experience/:slug',
+  authController.isLoggedIn,
+  viewsController.getExperience
 );
 
+// LOGIN PAGE
+router.get('/login', authController.isLoggedIn, viewsController.getLoginForm);
+
+// SIGNUP PAGE
+router.get('/signup', authController.isLoggedIn, viewsController.getSignUpForm);
+
+// ACCOUNT PAGE
+router.get('/me', authController.protect, viewsController.getAccount);
+
+// MY EXPERIENCES (AFTER STRIPE REDIRECT)
+router.get(
+  '/my-experiences',
+  bookingController.createBookingCheckout,
+  authController.protect,
+  viewsController.getMyExperiences
+);
+
+// UPDATE USER DATA
 router.post(
   '/submit-user-data',
   authController.protect,

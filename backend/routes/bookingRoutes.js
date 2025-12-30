@@ -1,13 +1,19 @@
 const express = require('express');
-const bookingController = require('./../controllers/bookingController');
-const authController = require('./../controllers/authController');
+const bookingController = require('../controllers/bookingController');
+const authController = require('../controllers/authController');
 
 const router = express.Router();
 
+// User must be logged in for any booking routes
 router.use(authController.protect);
 
-router.get('/checkout-session/:tourId', bookingController.getCheckoutSession);
+// PUBLIC (to logged-in users): Stripe checkout session
+router.get(
+  '/checkout-session/:experienceId',
+  bookingController.getCheckoutSession
+);
 
+// Only admins or lead-hosts/guides can manage bookings
 router.use(authController.restrictTo('admin', 'lead-guide'));
 
 router

@@ -1,0 +1,128 @@
+extends base
+include _reviewCard
+
+block append head
+  script(src="https://api.mapbox.com/mapbox-gl-js/v3.17.0-beta.1/mapbox-gl.js")
+  link(
+    href="https://api.mapbox.com/mapbox-gl-js/v3.17.0-beta.1/mapbox-gl.css",
+    rel="stylesheet"
+  )
+
+mixin overviewBox(label, text, icon)
+  .overview-box__detail
+    svg.overview-box__icon
+      use(xlink:href=`/img/icons.svg#icon-${icon}`)
+    span.overview-box__label= label
+    span.overview-box__text= text
+
+block content
+  section.section-header
+    .header__hero
+      .header__hero-overlay &nbsp;
+      img.header__hero-img(
+        src=`/img/experiences/${experience.imageCover}`,
+        alt=experience.name
+      )
+
+    .heading-box
+      h1.heading-primary
+        span= `${experience.name} experience`
+      .heading-box__group
+        .heading-box__detail
+          svg.heading-box__icon
+            use(xlink:href='/img/icons.svg#icon-clock')
+          span.heading-box__text= `${experience.duration} days`
+        .heading-box__detail
+          svg.heading-box__icon
+            use(xlink:href='/img/icons.svg#icon-map-pin')
+          span.heading-box__text= experience.startLocation.description
+
+  section.section-description
+    .overview-box
+      div
+        .overview-box__group
+          h2.heading-secondary.ma-bt-lg Quick facts
+
+          if experience.timeSlots && experience.timeSlots.length
+            - const nextDate = experience.timeSlots[0].toLocaleString('en-us', { month: 'long', year: 'numeric' })
+            +overviewBox('Next date', nextDate, 'calendar')
+          else
+            +overviewBox('Next date', 'Coming soon', 'calendar')
+
+          +overviewBox('Category', experience.category, 'trending-up')
+          +overviewBox('Capacity', `${experience.capacity} people`, 'user')
+          +overviewBox('Rating', `${experience.ratingsAverage} / 5`, 'star')
+
+        .overview-box__group
+          h2.heading-secondary.ma-bt-lg Your experience hosts
+
+          if experience.hosts && experience.hosts.length
+            each host in experience.hosts
+              .overview-box__detail
+                img.overview-box__img(
+                  src=`/img/users/${host.photo}`,
+                  alt=host.name
+                )
+
+                if host.role === 'lead-guide'
+                  span.overview-box__label Lead host
+                else
+                  span.overview-box__label Host
+
+                span.overview-box__text= host.name
+          else
+            p.overview-box__text No hosts assigned yet
+
+    .description-box
+      h2.heading-secondary.ma-bt-lg= `About ${experience.name}`
+      - const paragraphs = experience.description.split('\n')
+      each p in paragraphs
+        p.description__text= p
+
+  section.section-pictures
+    if experience.images && experience.images.length
+      each img, i in experience.images
+        .picture-box
+          img.picture-box__img(
+            src=`/img/experiences/${img}`,
+            alt=`${experience.name} image ${i + 1}`,
+            class=`picture-box__img--${i + 1}`
+          )
+
+  section.section-map
+    if experience.locations && experience.locations.length
+      #map(data-locations=`${JSON.stringify(experience.locations)}`)
+
+  section.section-reviews
+    .reviews
+      if experience.reviews && experience.reviews.length
+        each review in experience.reviews
+          +reviewCard(review)
+      else
+        p.reviews__text No reviews yet
+
+  section.section-cta
+    .cta
+      .cta__img.cta__img--logo
+        img(src='/img/logo-white.png', alt='Logo')
+
+      if experience.images && experience.images.length >= 3
+        img.cta__img.cta__img--1(
+          src=`/img/experiences/${experience.images[1]}`,
+          alt='Experience image'
+        )
+        img.cta__img.cta__img--2(
+          src=`/img/experiences/${experience.images[2]}`,
+          alt='Experience image'
+        )
+
+      .cta__content
+        h2.heading-secondary What are you waiting for?
+        p.cta__text= `${experience.duration} days. One unforgettable experience.`
+
+        if user
+          button.btn.btn--green.span-all-rows#book-experience(
+            data-experience-id=experience._id
+          ) Book now!
+        else
+          a.btn.btn--green.span-all-rows(href='/login') Log in to book 
