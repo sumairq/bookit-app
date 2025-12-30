@@ -5,11 +5,12 @@ const stripe = Stripe(
   'pk_test_51HqUr3CajjWj6WgQfnNSueng3a55IlOhONrfj3U1zm1bKEzxNPw5Rbj75rMOAJf8vWB4D2LzG9BXPJKFvNrTqfAN00fusru4Ok'
 );
 
-export const bookTour = async (tourId) => {
+export const bookExperience = async (experienceId) => {
   try {
     // 1) Get checkout session from API
     const session = await axios(
-      `http://127.0.0.1:3000/api/v1/bookings/checkout-session/${tourId}`
+      `http://127.0.0.1:3000/api/v1/bookings/checkout-session/${experienceId}`,
+      { withCredentials: true }
     );
     console.log(session);
 

@@ -2,7 +2,7 @@ export interface Review {
   _id: string;
   review: string;
   rating: number;
-  tour: string;
+  experience: string;
   user: {
     _id: string;
     name: string;
@@ -27,31 +27,43 @@ export interface Location {
   day: number;
 }
 
-export interface Guide {
+export interface Host {
   _id: string;
   name: string;
   email: string;
   photo: string;
-  role: "lead-guide" | "guide"; // matches Natours roles
+  // Align with backend roles and API types
+  role: "lead-guide" | "guide" | "host";
 }
 
-export interface Tour {
+export interface Experience {
   _id: string;
   name: string;
+  slug: string;
+
   duration: number;
-  maxGroupSize: number;
-  difficulty: string;
-  guides: Guide[]; // or Guide[] if you want full population later
+  capacity: number;
+
+  category: "art" | "fitness" | "outdoors" | "food" | "craft" | "tech";
+
   ratingsAverage: number;
   ratingsQuantity: number;
+
   price: number;
+  priceDiscount?: number;
+
   summary: string;
   description: string;
+
   imageCover: string;
   images: string[];
+
   startLocation: StartLocation;
-  startDates: string[];
   locations: Location[];
-  slug: string;
+
+  timeSlots: string[];
+
+  hosts: Host[];
+
   reviews: Review[];
 }

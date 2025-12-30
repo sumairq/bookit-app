@@ -1,11 +1,11 @@
-// src/hooks/useTour.ts
+// src/hooks/useExperience.ts
 import { useState, useEffect } from "react";
 import { api } from "../api/axios";
 import type { ApiError } from "../types/ApiError";
-import type { Tour } from "../types/Tour";
+import type { Experience } from "../api/experiences";
 
-export function useTour(slug?: string | null) {
-  const [tour, setTour] = useState<Tour | null>(null);
+export function useExperience(slug?: string | null) {
+  const [experience, setExperience] = useState<Experience | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -14,19 +14,22 @@ export function useTour(slug?: string | null) {
 
     let cancelled = false;
 
-    async function fetchTour() {
+    async function fetchExperience() {
       setLoading(true);
       setError(null);
 
       try {
-        const res = await api.get(`/tours/${slug}`);
+        const res = await api.get(`/experiences/slug/${slug}`);
+        console.log(res);
 
-        const tourData: Tour = res.data.data.data;
-        if (!cancelled) setTour(tourData);
+        const experienceData: Experience = res.data.data.data;
+
+        if (!cancelled) {
+          setExperience(experienceData);
+        }
       } catch (err) {
         if (cancelled) return;
 
-        // STRICT, NO ANY
         const errorResponse = err as {
           response?: { data?: ApiError };
         };
@@ -39,15 +42,18 @@ export function useTour(slug?: string | null) {
           setError("An unexpected error occurred.");
         }
       } finally {
-        if (!cancelled) setLoading(false);
+        if (!cancelled) {
+          setLoading(false);
+        }
       }
     }
 
-    fetchTour();
+    fetchExperience();
+
     return () => {
       cancelled = true;
     };
   }, [slug]);
 
-  return { tour, loading, error };
+  return { experience, loading, error };
 }

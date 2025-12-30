@@ -3,9 +3,8 @@ const reviewController = require('./../controllers/reviewController');
 const authController = require('./../controllers/authController');
 
 const router = express.Router({ mergeParams: true });
-// By setting mergeParams to true we can have both the following routes to be handled the same way.
-
-// POST /tour/234dad4/reviews
+// mergeParams allows nested routes like:
+// POST /experiences/:experienceId/reviews
 // POST /reviews
 
 router.use(authController.protect);
@@ -15,7 +14,7 @@ router
   .get(reviewController.getAllReviews)
   .post(
     authController.restrictTo('user'),
-    reviewController.setTourUserIds,
+    reviewController.setExperienceUserIds,
     reviewController.createReview
   );
 

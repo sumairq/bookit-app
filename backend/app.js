@@ -11,27 +11,35 @@ const hpp = require('hpp');
 
 const AppError = require('./utils/appError.js');
 const globalErrorHandler = require('./controllers/errorController.js');
-const tourRouter = require('./routes/tourRoutes.js');
+
+// ROUTERS
+const experienceRouter = require('./routes/experienceRoutes.js');
 const userRouter = require('./routes/userRoutes.js');
-const reviewRouter = require('./routes/reviewRoutes');
+const reviewRouter = require('./routes/reviewRoutes.js');
 const viewRouter = require('./routes/viewRoutes.js');
 const bookingRouter = require('./routes/bookingRoutes.js');
 
 const app = express();
 
+/* ======================
+   VIEW ENGINE
+====================== */
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
-// 1) GlOBAL MIDDLEWARES
+
+/* ======================
+   GLOBAL MIDDLEWARES
+====================== */
 const allowedOrigins = [
   'http://localhost:5173',
   'http://127.0.0.1:5173',
   'http://localhost:3000',
   'http://127.0.0.1:3000',
 ];
+
 app.use(
   cors({
     origin: function (origin, callback) {
-      // Allow requests with no origin (like mobile apps, Postman)
       if (!origin) return callback(null, true);
 
       if (allowedOrigins.includes(origin)) {
@@ -43,29 +51,29 @@ app.use(
     credentials: true,
   })
 );
-// Set Security HTTP headers with custom Content Security Policy
+
+// Security headers
 app.use(
   helmet({
     contentSecurityPolicy: false,
   })
 );
 
-//Development logging
+// Development logging
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 }
-// todo: set back to 100
+
+// Rate limiting
 const limiter = rateLimit({
   max: 100000,
   windowMs: 60 * 60 * 1000,
   message: 'Too many requests from this IP, please try again in an hour!',
 });
-
 app.use('/api', limiter);
-// Added this line because it's default is 'simple' in express@5 unlike the previous versions.
+
+// Express v5 query mutability fix
 app.set('query parser', 'extended');
-//This middleware makes the req.query mutable like it was in express versions older than 5.
-//https://stackoverflow.com/questions/79597051/express-v5-is-there-any-way-to-modify-req-query
 app.use((req, res, next) => {
   Object.defineProperty(req, 'query', {
     ...Object.getOwnPropertyDescriptor(req, 'query'),
@@ -74,19 +82,17 @@ app.use((req, res, next) => {
   });
   next();
 });
-// Body parser, reading data from body into req.body
+
+// Body parsers
 app.use(express.json({ limit: '10kb' }));
-app.use(express.urlencoded({ exteded: true, limit: '10kb' }));
+app.use(express.urlencoded({ extended: true, limit: '10kb' }));
 app.use(cookieParser());
 
-// Data sanitization against NoSQL query injection
+// Data sanitization
 app.use(mongoSanitize());
-
-//Data sanitization against XSS(cross site scripting attack)
 app.use(xss());
 
 // Prevent parameter pollution
-// It cleans up the query string (removes any duplicate parameters)
 app.use(
   hpp({
     whitelist: [
@@ -100,8 +106,8 @@ app.use(
   })
 );
 
-// Serving static files
-app.use(express.static(`${__dirname}/public`));
+// Static files
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Test middleware
 app.use((req, res, next) => {
@@ -109,21 +115,23 @@ app.use((req, res, next) => {
   next();
 });
 
-// 2) ROUTE HANDLERS
+/* ======================
+   ROUTES
+====================== */
 
-// 3) ROUTES
-
+// PUG SSR ROUTES
 app.use('/', viewRouter);
-app.use('/api/v1/tours', tourRouter);
+
+// API ROUTES
+app.use('/api/v1/experiences', experienceRouter);
 app.use('/api/v1/users', userRouter);
 app.use('/api/v1/reviews', reviewRouter);
 app.use('/api/v1/bookings', bookingRouter);
 
+/* ======================
+   ERROR HANDLING
+====================== */
 app.all('{*splat}', (req, res, next) => {
-  // const err = new Error(`Can't find ${req.originalUrl} on this server!`);
-  // err.status = 'fail';
-  // err.statusCode = 404;
-
   next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
 });
 
