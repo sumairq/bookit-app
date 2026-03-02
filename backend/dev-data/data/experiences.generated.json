@@ -4,12 +4,19 @@
     "startLocation": {
       "description": "ART Hub",
       "type": "Point",
-      "coordinates": [2.3621999999999996, 48.8666],
+      "coordinates": [
+        2.3621999999999996,
+        48.8666
+      ],
       "address": "art central location"
     },
     "ratingsAverage": 4.8,
     "ratingsQuantity": 13,
-    "images": ["art-1-1.jpg", "art-1-2.jpg", "art-1-3.jpg"],
+    "images": [
+      "art-1-1.jpg",
+      "art-1-2.jpg",
+      "art-1-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -20,7 +27,10 @@
     "capacity": 20,
     "category": "art",
     "difficulty": "medium",
-    "guides": ["5c8a21d02f8fb814b56fa189", "5c8a21f22f8fb814b56fa18a"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189",
+      "5c8a21f22f8fb814b56fa18a"
+    ],
     "price": 357,
     "summary": "A curated art experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -30,14 +40,20 @@
         "_id": "69a550548fdc748c1beacab8",
         "description": "art location A",
         "type": "Point",
-        "coordinates": [2.3722, 48.8766],
+        "coordinates": [
+          2.3722,
+          48.8766
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacab9",
         "description": "art location B",
         "type": "Point",
-        "coordinates": [2.3821999999999997, 48.8866],
+        "coordinates": [
+          2.3821999999999997,
+          48.8866
+        ],
         "day": 3
       }
     ]
@@ -47,12 +63,19 @@
     "startLocation": {
       "description": "ART Hub",
       "type": "Point",
-      "coordinates": [2.3722, 48.8766],
+      "coordinates": [
+        2.3722,
+        48.8766
+      ],
       "address": "art central location"
     },
     "ratingsAverage": 4.9,
     "ratingsQuantity": 11,
-    "images": ["art-2-1.jpg", "art-2-2.jpg", "art-2-3.jpg"],
+    "images": [
+      "art-2-1.jpg",
+      "art-2-2.jpg",
+      "art-2-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -77,14 +100,20 @@
         "_id": "69a550548fdc748c1beacabb",
         "description": "art location A",
         "type": "Point",
-        "coordinates": [2.3922, 48.8966],
+        "coordinates": [
+          2.3922,
+          48.8966
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacabc",
         "description": "art location B",
         "type": "Point",
-        "coordinates": [2.4122, 48.9166],
+        "coordinates": [
+          2.4122,
+          48.9166
+        ],
         "day": 3
       }
     ]
@@ -94,12 +123,19 @@
     "startLocation": {
       "description": "ART Hub",
       "type": "Point",
-      "coordinates": [2.3821999999999997, 48.8866],
+      "coordinates": [
+        2.3821999999999997,
+        48.8866
+      ],
       "address": "art central location"
     },
     "ratingsAverage": 4.9,
     "ratingsQuantity": 13,
-    "images": ["art-3-1.jpg", "art-3-2.jpg", "art-3-3.jpg"],
+    "images": [
+      "art-3-1.jpg",
+      "art-3-2.jpg",
+      "art-3-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -110,7 +146,9 @@
     "capacity": 8,
     "category": "art",
     "difficulty": "easy",
-    "guides": ["5c8a21d02f8fb814b56fa189"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189"
+    ],
     "price": 516,
     "summary": "A curated art experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -120,14 +158,20 @@
         "_id": "69a550548fdc748c1beacabe",
         "description": "art location A",
         "type": "Point",
-        "coordinates": [2.4122, 48.9166],
+        "coordinates": [
+          2.4122,
+          48.9166
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacabf",
         "description": "art location B",
         "type": "Point",
-        "coordinates": [2.4421999999999997, 48.946600000000004],
+        "coordinates": [
+          2.4421999999999997,
+          48.946600000000004
+        ],
         "day": 3
       }
     ]
@@ -137,12 +181,19 @@
     "startLocation": {
       "description": "ART Hub",
       "type": "Point",
-      "coordinates": [2.3922, 48.8966],
+      "coordinates": [
+        2.3922,
+        48.8966
+      ],
       "address": "art central location"
     },
     "ratingsAverage": 4.5,
     "ratingsQuantity": 7,
-    "images": ["art-4-1.jpg", "art-4-2.jpg", "art-4-3.jpg"],
+    "images": [
+      "art-4-1.jpg",
+      "art-4-2.jpg",
+      "art-4-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -153,7 +204,10 @@
     "capacity": 10,
     "category": "art",
     "difficulty": "medium",
-    "guides": ["5c8a21d02f8fb814b56fa189", "5c8a21f22f8fb814b56fa18a"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189",
+      "5c8a21f22f8fb814b56fa18a"
+    ],
     "price": 1778,
     "summary": "A curated art experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -163,14 +217,20 @@
         "_id": "69a550548fdc748c1beacac1",
         "description": "art location A",
         "type": "Point",
-        "coordinates": [2.4322, 48.9366],
+        "coordinates": [
+          2.4322,
+          48.9366
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacac2",
         "description": "art location B",
         "type": "Point",
-        "coordinates": [2.4722, 48.9766],
+        "coordinates": [
+          2.4722,
+          48.9766
+        ],
         "day": 3
       }
     ]
@@ -180,12 +240,19 @@
     "startLocation": {
       "description": "ART Hub",
       "type": "Point",
-      "coordinates": [2.4021999999999997, 48.9066],
+      "coordinates": [
+        2.4021999999999997,
+        48.9066
+      ],
       "address": "art central location"
     },
     "ratingsAverage": 4.4,
     "ratingsQuantity": 12,
-    "images": ["art-5-1.jpg", "art-5-2.jpg", "art-5-3.jpg"],
+    "images": [
+      "art-5-1.jpg",
+      "art-5-2.jpg",
+      "art-5-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -210,14 +277,20 @@
         "_id": "69a550548fdc748c1beacac4",
         "description": "art location A",
         "type": "Point",
-        "coordinates": [2.4522, 48.9566],
+        "coordinates": [
+          2.4522,
+          48.9566
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacac5",
         "description": "art location B",
         "type": "Point",
-        "coordinates": [2.5021999999999998, 49.0066],
+        "coordinates": [
+          2.5021999999999998,
+          49.0066
+        ],
         "day": 3
       }
     ]
@@ -227,12 +300,19 @@
     "startLocation": {
       "description": "ART Hub",
       "type": "Point",
-      "coordinates": [2.4122, 48.9166],
+      "coordinates": [
+        2.4122,
+        48.9166
+      ],
       "address": "art central location"
     },
     "ratingsAverage": 4.3,
     "ratingsQuantity": 12,
-    "images": ["art-6-1.jpg", "art-6-2.jpg", "art-6-3.jpg"],
+    "images": [
+      "art-6-1.jpg",
+      "art-6-2.jpg",
+      "art-6-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -243,7 +323,9 @@
     "capacity": 17,
     "category": "art",
     "difficulty": "easy",
-    "guides": ["5c8a21d02f8fb814b56fa189"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189"
+    ],
     "price": 1107,
     "summary": "A curated art experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -253,14 +335,20 @@
         "_id": "69a550548fdc748c1beacac7",
         "description": "art location A",
         "type": "Point",
-        "coordinates": [2.4722, 48.9766],
+        "coordinates": [
+          2.4722,
+          48.9766
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacac8",
         "description": "art location B",
         "type": "Point",
-        "coordinates": [2.5322, 49.0366],
+        "coordinates": [
+          2.5322,
+          49.0366
+        ],
         "day": 3
       }
     ]
@@ -270,12 +358,19 @@
     "startLocation": {
       "description": "ART Hub",
       "type": "Point",
-      "coordinates": [2.4221999999999997, 48.9266],
+      "coordinates": [
+        2.4221999999999997,
+        48.9266
+      ],
       "address": "art central location"
     },
     "ratingsAverage": 4.3,
     "ratingsQuantity": 6,
-    "images": ["art-7-1.jpg", "art-7-2.jpg", "art-7-3.jpg"],
+    "images": [
+      "art-7-1.jpg",
+      "art-7-2.jpg",
+      "art-7-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -286,7 +381,10 @@
     "capacity": 16,
     "category": "art",
     "difficulty": "medium",
-    "guides": ["5c8a21d02f8fb814b56fa189", "5c8a21f22f8fb814b56fa18a"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189",
+      "5c8a21f22f8fb814b56fa18a"
+    ],
     "price": 386,
     "summary": "A curated art experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -296,14 +394,20 @@
         "_id": "69a550548fdc748c1beacaca",
         "description": "art location A",
         "type": "Point",
-        "coordinates": [2.4922, 48.9966],
+        "coordinates": [
+          2.4922,
+          48.9966
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacacb",
         "description": "art location B",
         "type": "Point",
-        "coordinates": [2.5622, 49.0666],
+        "coordinates": [
+          2.5622,
+          49.0666
+        ],
         "day": 3
       }
     ]
@@ -313,12 +417,19 @@
     "startLocation": {
       "description": "ART Hub",
       "type": "Point",
-      "coordinates": [2.4322, 48.9366],
+      "coordinates": [
+        2.4322,
+        48.9366
+      ],
       "address": "art central location"
     },
     "ratingsAverage": 4.8,
     "ratingsQuantity": 9,
-    "images": ["art-8-1.jpg", "art-8-2.jpg", "art-8-3.jpg"],
+    "images": [
+      "art-8-1.jpg",
+      "art-8-2.jpg",
+      "art-8-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -343,14 +454,20 @@
         "_id": "69a550548fdc748c1beacacd",
         "description": "art location A",
         "type": "Point",
-        "coordinates": [2.5122, 49.0166],
+        "coordinates": [
+          2.5122,
+          49.0166
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacace",
         "description": "art location B",
         "type": "Point",
-        "coordinates": [2.5922, 49.0966],
+        "coordinates": [
+          2.5922,
+          49.0966
+        ],
         "day": 3
       }
     ]
@@ -360,12 +477,19 @@
     "startLocation": {
       "description": "ART Hub",
       "type": "Point",
-      "coordinates": [2.4421999999999997, 48.946600000000004],
+      "coordinates": [
+        2.4421999999999997,
+        48.946600000000004
+      ],
       "address": "art central location"
     },
     "ratingsAverage": 4.7,
     "ratingsQuantity": 12,
-    "images": ["art-9-1.jpg", "art-9-2.jpg", "art-9-3.jpg"],
+    "images": [
+      "art-9-1.jpg",
+      "art-9-2.jpg",
+      "art-9-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -376,7 +500,9 @@
     "capacity": 21,
     "category": "art",
     "difficulty": "easy",
-    "guides": ["5c8a21d02f8fb814b56fa189"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189"
+    ],
     "price": 1661,
     "summary": "A curated art experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -386,14 +512,20 @@
         "_id": "69a550548fdc748c1beacad0",
         "description": "art location A",
         "type": "Point",
-        "coordinates": [2.5322, 49.0366],
+        "coordinates": [
+          2.5322,
+          49.0366
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacad1",
         "description": "art location B",
         "type": "Point",
-        "coordinates": [2.6222, 49.1266],
+        "coordinates": [
+          2.6222,
+          49.1266
+        ],
         "day": 3
       }
     ]
@@ -403,12 +535,19 @@
     "startLocation": {
       "description": "FITNESS Hub",
       "type": "Point",
-      "coordinates": [115.19890000000001, -8.3995],
+      "coordinates": [
+        115.19890000000001,
+        -8.3995
+      ],
       "address": "fitness central location"
     },
     "ratingsAverage": 4.3,
     "ratingsQuantity": 12,
-    "images": ["fitness-1-1.jpg", "fitness-1-2.jpg", "fitness-1-3.jpg"],
+    "images": [
+      "fitness-1-1.jpg",
+      "fitness-1-2.jpg",
+      "fitness-1-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -419,7 +558,10 @@
     "capacity": 19,
     "category": "fitness",
     "difficulty": "medium",
-    "guides": ["5c8a21d02f8fb814b56fa189", "5c8a21f22f8fb814b56fa18a"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189",
+      "5c8a21f22f8fb814b56fa18a"
+    ],
     "price": 1149,
     "summary": "A curated fitness experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -429,14 +571,20 @@
         "_id": "69a550548fdc748c1beacad3",
         "description": "fitness location A",
         "type": "Point",
-        "coordinates": [115.2089, -8.3895],
+        "coordinates": [
+          115.2089,
+          -8.3895
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacad4",
         "description": "fitness location B",
         "type": "Point",
-        "coordinates": [115.2189, -8.3795],
+        "coordinates": [
+          115.2189,
+          -8.3795
+        ],
         "day": 3
       }
     ]
@@ -446,12 +594,19 @@
     "startLocation": {
       "description": "FITNESS Hub",
       "type": "Point",
-      "coordinates": [115.2089, -8.3895],
+      "coordinates": [
+        115.2089,
+        -8.3895
+      ],
       "address": "fitness central location"
     },
     "ratingsAverage": 4.7,
     "ratingsQuantity": 5,
-    "images": ["fitness-2-1.jpg", "fitness-2-2.jpg", "fitness-2-3.jpg"],
+    "images": [
+      "fitness-2-1.jpg",
+      "fitness-2-2.jpg",
+      "fitness-2-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -476,14 +631,20 @@
         "_id": "69a550548fdc748c1beacad6",
         "description": "fitness location A",
         "type": "Point",
-        "coordinates": [115.22890000000001, -8.3695],
+        "coordinates": [
+          115.22890000000001,
+          -8.3695
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacad7",
         "description": "fitness location B",
         "type": "Point",
-        "coordinates": [115.2489, -8.349499999999999],
+        "coordinates": [
+          115.2489,
+          -8.349499999999999
+        ],
         "day": 3
       }
     ]
@@ -493,12 +654,19 @@
     "startLocation": {
       "description": "FITNESS Hub",
       "type": "Point",
-      "coordinates": [115.2189, -8.3795],
+      "coordinates": [
+        115.2189,
+        -8.3795
+      ],
       "address": "fitness central location"
     },
     "ratingsAverage": 4.8,
     "ratingsQuantity": 12,
-    "images": ["fitness-3-1.jpg", "fitness-3-2.jpg", "fitness-3-3.jpg"],
+    "images": [
+      "fitness-3-1.jpg",
+      "fitness-3-2.jpg",
+      "fitness-3-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -509,7 +677,9 @@
     "capacity": 10,
     "category": "fitness",
     "difficulty": "easy",
-    "guides": ["5c8a21d02f8fb814b56fa189"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189"
+    ],
     "price": 2006,
     "summary": "A curated fitness experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -519,14 +689,20 @@
         "_id": "69a550548fdc748c1beacad9",
         "description": "fitness location A",
         "type": "Point",
-        "coordinates": [115.2489, -8.349499999999999],
+        "coordinates": [
+          115.2489,
+          -8.349499999999999
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacada",
         "description": "fitness location B",
         "type": "Point",
-        "coordinates": [115.27890000000001, -8.3195],
+        "coordinates": [
+          115.27890000000001,
+          -8.3195
+        ],
         "day": 3
       }
     ]
@@ -536,12 +712,19 @@
     "startLocation": {
       "description": "FITNESS Hub",
       "type": "Point",
-      "coordinates": [115.22890000000001, -8.3695],
+      "coordinates": [
+        115.22890000000001,
+        -8.3695
+      ],
       "address": "fitness central location"
     },
     "ratingsAverage": 4.5,
     "ratingsQuantity": 8,
-    "images": ["fitness-4-1.jpg", "fitness-4-2.jpg", "fitness-4-3.jpg"],
+    "images": [
+      "fitness-4-1.jpg",
+      "fitness-4-2.jpg",
+      "fitness-4-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -552,7 +735,10 @@
     "capacity": 19,
     "category": "fitness",
     "difficulty": "medium",
-    "guides": ["5c8a21d02f8fb814b56fa189", "5c8a21f22f8fb814b56fa18a"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189",
+      "5c8a21f22f8fb814b56fa18a"
+    ],
     "price": 1341,
     "summary": "A curated fitness experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -562,14 +748,20 @@
         "_id": "69a550548fdc748c1beacadc",
         "description": "fitness location A",
         "type": "Point",
-        "coordinates": [115.2689, -8.3295],
+        "coordinates": [
+          115.2689,
+          -8.3295
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacadd",
         "description": "fitness location B",
         "type": "Point",
-        "coordinates": [115.30890000000001, -8.2895],
+        "coordinates": [
+          115.30890000000001,
+          -8.2895
+        ],
         "day": 3
       }
     ]
@@ -579,12 +771,19 @@
     "startLocation": {
       "description": "FITNESS Hub",
       "type": "Point",
-      "coordinates": [115.2389, -8.359499999999999],
+      "coordinates": [
+        115.2389,
+        -8.359499999999999
+      ],
       "address": "fitness central location"
     },
     "ratingsAverage": 4.6,
     "ratingsQuantity": 14,
-    "images": ["fitness-5-1.jpg", "fitness-5-2.jpg", "fitness-5-3.jpg"],
+    "images": [
+      "fitness-5-1.jpg",
+      "fitness-5-2.jpg",
+      "fitness-5-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -609,14 +808,20 @@
         "_id": "69a550548fdc748c1beacadf",
         "description": "fitness location A",
         "type": "Point",
-        "coordinates": [115.2889, -8.3095],
+        "coordinates": [
+          115.2889,
+          -8.3095
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacae0",
         "description": "fitness location B",
         "type": "Point",
-        "coordinates": [115.33890000000001, -8.2595],
+        "coordinates": [
+          115.33890000000001,
+          -8.2595
+        ],
         "day": 3
       }
     ]
@@ -626,12 +831,19 @@
     "startLocation": {
       "description": "FITNESS Hub",
       "type": "Point",
-      "coordinates": [115.2489, -8.349499999999999],
+      "coordinates": [
+        115.2489,
+        -8.349499999999999
+      ],
       "address": "fitness central location"
     },
     "ratingsAverage": 4.8,
     "ratingsQuantity": 11,
-    "images": ["fitness-6-1.jpg", "fitness-6-2.jpg", "fitness-6-3.jpg"],
+    "images": [
+      "fitness-6-1.jpg",
+      "fitness-6-2.jpg",
+      "fitness-6-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -642,7 +854,9 @@
     "capacity": 22,
     "category": "fitness",
     "difficulty": "easy",
-    "guides": ["5c8a21d02f8fb814b56fa189"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189"
+    ],
     "price": 635,
     "summary": "A curated fitness experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -652,14 +866,20 @@
         "_id": "69a550548fdc748c1beacae2",
         "description": "fitness location A",
         "type": "Point",
-        "coordinates": [115.30890000000001, -8.2895],
+        "coordinates": [
+          115.30890000000001,
+          -8.2895
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacae3",
         "description": "fitness location B",
         "type": "Point",
-        "coordinates": [115.36890000000001, -8.2295],
+        "coordinates": [
+          115.36890000000001,
+          -8.2295
+        ],
         "day": 3
       }
     ]
@@ -669,12 +889,19 @@
     "startLocation": {
       "description": "FITNESS Hub",
       "type": "Point",
-      "coordinates": [115.2589, -8.3395],
+      "coordinates": [
+        115.2589,
+        -8.3395
+      ],
       "address": "fitness central location"
     },
     "ratingsAverage": 4.2,
     "ratingsQuantity": 5,
-    "images": ["fitness-7-1.jpg", "fitness-7-2.jpg", "fitness-7-3.jpg"],
+    "images": [
+      "fitness-7-1.jpg",
+      "fitness-7-2.jpg",
+      "fitness-7-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -685,7 +912,10 @@
     "capacity": 10,
     "category": "fitness",
     "difficulty": "medium",
-    "guides": ["5c8a21d02f8fb814b56fa189", "5c8a21f22f8fb814b56fa18a"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189",
+      "5c8a21f22f8fb814b56fa18a"
+    ],
     "price": 1126,
     "summary": "A curated fitness experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -695,14 +925,20 @@
         "_id": "69a550548fdc748c1beacae5",
         "description": "fitness location A",
         "type": "Point",
-        "coordinates": [115.3289, -8.269499999999999],
+        "coordinates": [
+          115.3289,
+          -8.269499999999999
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacae6",
         "description": "fitness location B",
         "type": "Point",
-        "coordinates": [115.3989, -8.199499999999999],
+        "coordinates": [
+          115.3989,
+          -8.199499999999999
+        ],
         "day": 3
       }
     ]
@@ -712,12 +948,19 @@
     "startLocation": {
       "description": "FITNESS Hub",
       "type": "Point",
-      "coordinates": [115.2689, -8.3295],
+      "coordinates": [
+        115.2689,
+        -8.3295
+      ],
       "address": "fitness central location"
     },
     "ratingsAverage": 4.3,
     "ratingsQuantity": 14,
-    "images": ["fitness-8-1.jpg", "fitness-8-2.jpg", "fitness-8-3.jpg"],
+    "images": [
+      "fitness-8-1.jpg",
+      "fitness-8-2.jpg",
+      "fitness-8-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -742,14 +985,20 @@
         "_id": "69a550548fdc748c1beacae8",
         "description": "fitness location A",
         "type": "Point",
-        "coordinates": [115.3489, -8.2495],
+        "coordinates": [
+          115.3489,
+          -8.2495
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacae9",
         "description": "fitness location B",
         "type": "Point",
-        "coordinates": [115.4289, -8.1695],
+        "coordinates": [
+          115.4289,
+          -8.1695
+        ],
         "day": 3
       }
     ]
@@ -759,12 +1008,19 @@
     "startLocation": {
       "description": "FITNESS Hub",
       "type": "Point",
-      "coordinates": [115.27890000000001, -8.3195],
+      "coordinates": [
+        115.27890000000001,
+        -8.3195
+      ],
       "address": "fitness central location"
     },
     "ratingsAverage": 4.6,
     "ratingsQuantity": 10,
-    "images": ["fitness-9-1.jpg", "fitness-9-2.jpg", "fitness-9-3.jpg"],
+    "images": [
+      "fitness-9-1.jpg",
+      "fitness-9-2.jpg",
+      "fitness-9-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -775,7 +1031,9 @@
     "capacity": 19,
     "category": "fitness",
     "difficulty": "easy",
-    "guides": ["5c8a21d02f8fb814b56fa189"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189"
+    ],
     "price": 908,
     "summary": "A curated fitness experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -785,14 +1043,20 @@
         "_id": "69a550548fdc748c1beacaeb",
         "description": "fitness location A",
         "type": "Point",
-        "coordinates": [115.36890000000001, -8.2295],
+        "coordinates": [
+          115.36890000000001,
+          -8.2295
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacaec",
         "description": "fitness location B",
         "type": "Point",
-        "coordinates": [115.4589, -8.1395],
+        "coordinates": [
+          115.4589,
+          -8.1395
+        ],
         "day": 3
       }
     ]
@@ -802,12 +1066,19 @@
     "startLocation": {
       "description": "OUTDOORS Hub",
       "type": "Point",
-      "coordinates": [-106.4354, 39.1278],
+      "coordinates": [
+        -106.4354,
+        39.1278
+      ],
       "address": "outdoors central location"
     },
     "ratingsAverage": 4.9,
     "ratingsQuantity": 13,
-    "images": ["outdoors-1-1.jpg", "outdoors-1-2.jpg", "outdoors-1-3.jpg"],
+    "images": [
+      "outdoors-1-1.jpg",
+      "outdoors-1-2.jpg",
+      "outdoors-1-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -818,7 +1089,10 @@
     "capacity": 20,
     "category": "outdoors",
     "difficulty": "medium",
-    "guides": ["5c8a21d02f8fb814b56fa189", "5c8a21f22f8fb814b56fa18a"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189",
+      "5c8a21f22f8fb814b56fa18a"
+    ],
     "price": 718,
     "summary": "A curated outdoors experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -828,14 +1102,20 @@
         "_id": "69a550548fdc748c1beacaee",
         "description": "outdoors location A",
         "type": "Point",
-        "coordinates": [-106.42540000000001, 39.137800000000006],
+        "coordinates": [
+          -106.42540000000001,
+          39.137800000000006
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacaef",
         "description": "outdoors location B",
         "type": "Point",
-        "coordinates": [-106.4154, 39.147800000000004],
+        "coordinates": [
+          -106.4154,
+          39.147800000000004
+        ],
         "day": 3
       }
     ]
@@ -845,12 +1125,19 @@
     "startLocation": {
       "description": "OUTDOORS Hub",
       "type": "Point",
-      "coordinates": [-106.42540000000001, 39.137800000000006],
+      "coordinates": [
+        -106.42540000000001,
+        39.137800000000006
+      ],
       "address": "outdoors central location"
     },
     "ratingsAverage": 4.5,
     "ratingsQuantity": 8,
-    "images": ["outdoors-2-1.jpg", "outdoors-2-2.jpg", "outdoors-2-3.jpg"],
+    "images": [
+      "outdoors-2-1.jpg",
+      "outdoors-2-2.jpg",
+      "outdoors-2-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -875,14 +1162,20 @@
         "_id": "69a550548fdc748c1beacaf1",
         "description": "outdoors location A",
         "type": "Point",
-        "coordinates": [-106.4054, 39.1578],
+        "coordinates": [
+          -106.4054,
+          39.1578
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacaf2",
         "description": "outdoors location B",
         "type": "Point",
-        "coordinates": [-106.3854, 39.177800000000005],
+        "coordinates": [
+          -106.3854,
+          39.177800000000005
+        ],
         "day": 3
       }
     ]
@@ -892,12 +1185,19 @@
     "startLocation": {
       "description": "OUTDOORS Hub",
       "type": "Point",
-      "coordinates": [-106.4154, 39.147800000000004],
+      "coordinates": [
+        -106.4154,
+        39.147800000000004
+      ],
       "address": "outdoors central location"
     },
     "ratingsAverage": 4.9,
     "ratingsQuantity": 6,
-    "images": ["outdoors-3-1.jpg", "outdoors-3-2.jpg", "outdoors-3-3.jpg"],
+    "images": [
+      "outdoors-3-1.jpg",
+      "outdoors-3-2.jpg",
+      "outdoors-3-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -908,7 +1208,9 @@
     "capacity": 22,
     "category": "outdoors",
     "difficulty": "easy",
-    "guides": ["5c8a21d02f8fb814b56fa189"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189"
+    ],
     "price": 705,
     "summary": "A curated outdoors experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -918,14 +1220,20 @@
         "_id": "69a550548fdc748c1beacaf4",
         "description": "outdoors location A",
         "type": "Point",
-        "coordinates": [-106.3854, 39.177800000000005],
+        "coordinates": [
+          -106.3854,
+          39.177800000000005
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacaf5",
         "description": "outdoors location B",
         "type": "Point",
-        "coordinates": [-106.3554, 39.207800000000006],
+        "coordinates": [
+          -106.3554,
+          39.207800000000006
+        ],
         "day": 3
       }
     ]
@@ -935,12 +1243,19 @@
     "startLocation": {
       "description": "OUTDOORS Hub",
       "type": "Point",
-      "coordinates": [-106.4054, 39.1578],
+      "coordinates": [
+        -106.4054,
+        39.1578
+      ],
       "address": "outdoors central location"
     },
     "ratingsAverage": 4.6,
     "ratingsQuantity": 12,
-    "images": ["outdoors-4-1.jpg", "outdoors-4-2.jpg", "outdoors-4-3.jpg"],
+    "images": [
+      "outdoors-4-1.jpg",
+      "outdoors-4-2.jpg",
+      "outdoors-4-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -951,7 +1266,10 @@
     "capacity": 16,
     "category": "outdoors",
     "difficulty": "medium",
-    "guides": ["5c8a21d02f8fb814b56fa189", "5c8a21f22f8fb814b56fa18a"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189",
+      "5c8a21f22f8fb814b56fa18a"
+    ],
     "price": 680,
     "summary": "A curated outdoors experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -961,14 +1279,20 @@
         "_id": "69a550548fdc748c1beacaf7",
         "description": "outdoors location A",
         "type": "Point",
-        "coordinates": [-106.36540000000001, 39.1978],
+        "coordinates": [
+          -106.36540000000001,
+          39.1978
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacaf8",
         "description": "outdoors location B",
         "type": "Point",
-        "coordinates": [-106.3254, 39.2378],
+        "coordinates": [
+          -106.3254,
+          39.2378
+        ],
         "day": 3
       }
     ]
@@ -978,12 +1302,19 @@
     "startLocation": {
       "description": "OUTDOORS Hub",
       "type": "Point",
-      "coordinates": [-106.39540000000001, 39.1678],
+      "coordinates": [
+        -106.39540000000001,
+        39.1678
+      ],
       "address": "outdoors central location"
     },
     "ratingsAverage": 4.8,
     "ratingsQuantity": 8,
-    "images": ["outdoors-5-1.jpg", "outdoors-5-2.jpg", "outdoors-5-3.jpg"],
+    "images": [
+      "outdoors-5-1.jpg",
+      "outdoors-5-2.jpg",
+      "outdoors-5-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -1008,14 +1339,20 @@
         "_id": "69a550548fdc748c1beacafa",
         "description": "outdoors location A",
         "type": "Point",
-        "coordinates": [-106.34540000000001, 39.217800000000004],
+        "coordinates": [
+          -106.34540000000001,
+          39.217800000000004
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacafb",
         "description": "outdoors location B",
         "type": "Point",
-        "coordinates": [-106.2954, 39.2678],
+        "coordinates": [
+          -106.2954,
+          39.2678
+        ],
         "day": 3
       }
     ]
@@ -1025,12 +1362,19 @@
     "startLocation": {
       "description": "OUTDOORS Hub",
       "type": "Point",
-      "coordinates": [-106.3854, 39.177800000000005],
+      "coordinates": [
+        -106.3854,
+        39.177800000000005
+      ],
       "address": "outdoors central location"
     },
     "ratingsAverage": 4.6,
     "ratingsQuantity": 7,
-    "images": ["outdoors-6-1.jpg", "outdoors-6-2.jpg", "outdoors-6-3.jpg"],
+    "images": [
+      "outdoors-6-1.jpg",
+      "outdoors-6-2.jpg",
+      "outdoors-6-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -1041,7 +1385,9 @@
     "capacity": 16,
     "category": "outdoors",
     "difficulty": "easy",
-    "guides": ["5c8a21d02f8fb814b56fa189"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189"
+    ],
     "price": 2282,
     "summary": "A curated outdoors experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -1051,14 +1397,20 @@
         "_id": "69a550548fdc748c1beacafd",
         "description": "outdoors location A",
         "type": "Point",
-        "coordinates": [-106.3254, 39.2378],
+        "coordinates": [
+          -106.3254,
+          39.2378
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacafe",
         "description": "outdoors location B",
         "type": "Point",
-        "coordinates": [-106.2654, 39.2978],
+        "coordinates": [
+          -106.2654,
+          39.2978
+        ],
         "day": 3
       }
     ]
@@ -1068,12 +1420,19 @@
     "startLocation": {
       "description": "OUTDOORS Hub",
       "type": "Point",
-      "coordinates": [-106.37540000000001, 39.1878],
+      "coordinates": [
+        -106.37540000000001,
+        39.1878
+      ],
       "address": "outdoors central location"
     },
     "ratingsAverage": 4.3,
     "ratingsQuantity": 6,
-    "images": ["outdoors-7-1.jpg", "outdoors-7-2.jpg", "outdoors-7-3.jpg"],
+    "images": [
+      "outdoors-7-1.jpg",
+      "outdoors-7-2.jpg",
+      "outdoors-7-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -1084,7 +1443,10 @@
     "capacity": 9,
     "category": "outdoors",
     "difficulty": "medium",
-    "guides": ["5c8a21d02f8fb814b56fa189", "5c8a21f22f8fb814b56fa18a"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189",
+      "5c8a21f22f8fb814b56fa18a"
+    ],
     "price": 1803,
     "summary": "A curated outdoors experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -1094,14 +1456,20 @@
         "_id": "69a550548fdc748c1beacb00",
         "description": "outdoors location A",
         "type": "Point",
-        "coordinates": [-106.3054, 39.2578],
+        "coordinates": [
+          -106.3054,
+          39.2578
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacb01",
         "description": "outdoors location B",
         "type": "Point",
-        "coordinates": [-106.23540000000001, 39.3278],
+        "coordinates": [
+          -106.23540000000001,
+          39.3278
+        ],
         "day": 3
       }
     ]
@@ -1111,12 +1479,19 @@
     "startLocation": {
       "description": "OUTDOORS Hub",
       "type": "Point",
-      "coordinates": [-106.36540000000001, 39.1978],
+      "coordinates": [
+        -106.36540000000001,
+        39.1978
+      ],
       "address": "outdoors central location"
     },
     "ratingsAverage": 4.6,
     "ratingsQuantity": 11,
-    "images": ["outdoors-8-1.jpg", "outdoors-8-2.jpg", "outdoors-8-3.jpg"],
+    "images": [
+      "outdoors-8-1.jpg",
+      "outdoors-8-2.jpg",
+      "outdoors-8-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -1141,14 +1516,20 @@
         "_id": "69a550548fdc748c1beacb03",
         "description": "outdoors location A",
         "type": "Point",
-        "coordinates": [-106.28540000000001, 39.2778],
+        "coordinates": [
+          -106.28540000000001,
+          39.2778
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacb04",
         "description": "outdoors location B",
         "type": "Point",
-        "coordinates": [-106.20540000000001, 39.357800000000005],
+        "coordinates": [
+          -106.20540000000001,
+          39.357800000000005
+        ],
         "day": 3
       }
     ]
@@ -1158,12 +1539,19 @@
     "startLocation": {
       "description": "OUTDOORS Hub",
       "type": "Point",
-      "coordinates": [-106.3554, 39.207800000000006],
+      "coordinates": [
+        -106.3554,
+        39.207800000000006
+      ],
       "address": "outdoors central location"
     },
     "ratingsAverage": 4.3,
     "ratingsQuantity": 14,
-    "images": ["outdoors-9-1.jpg", "outdoors-9-2.jpg", "outdoors-9-3.jpg"],
+    "images": [
+      "outdoors-9-1.jpg",
+      "outdoors-9-2.jpg",
+      "outdoors-9-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -1174,7 +1562,9 @@
     "capacity": 9,
     "category": "outdoors",
     "difficulty": "easy",
-    "guides": ["5c8a21d02f8fb814b56fa189"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189"
+    ],
     "price": 691,
     "summary": "A curated outdoors experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -1184,14 +1574,20 @@
         "_id": "69a550548fdc748c1beacb06",
         "description": "outdoors location A",
         "type": "Point",
-        "coordinates": [-106.2654, 39.2978],
+        "coordinates": [
+          -106.2654,
+          39.2978
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacb07",
         "description": "outdoors location B",
         "type": "Point",
-        "coordinates": [-106.17540000000001, 39.387800000000006],
+        "coordinates": [
+          -106.17540000000001,
+          39.387800000000006
+        ],
         "day": 3
       }
     ]
@@ -1201,12 +1597,19 @@
     "startLocation": {
       "description": "FOOD Hub",
       "type": "Point",
-      "coordinates": [139.7017, 35.6995],
+      "coordinates": [
+        139.7017,
+        35.6995
+      ],
       "address": "food central location"
     },
     "ratingsAverage": 4.3,
     "ratingsQuantity": 8,
-    "images": ["food-1-1.jpg", "food-1-2.jpg", "food-1-3.jpg"],
+    "images": [
+      "food-1-1.jpg",
+      "food-1-2.jpg",
+      "food-1-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -1217,7 +1620,10 @@
     "capacity": 18,
     "category": "food",
     "difficulty": "medium",
-    "guides": ["5c8a21d02f8fb814b56fa189", "5c8a21f22f8fb814b56fa18a"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189",
+      "5c8a21f22f8fb814b56fa18a"
+    ],
     "price": 1142,
     "summary": "A curated food experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -1227,14 +1633,20 @@
         "_id": "69a550548fdc748c1beacb09",
         "description": "food location A",
         "type": "Point",
-        "coordinates": [139.7117, 35.709500000000006],
+        "coordinates": [
+          139.7117,
+          35.709500000000006
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacb0a",
         "description": "food location B",
         "type": "Point",
-        "coordinates": [139.7217, 35.719500000000004],
+        "coordinates": [
+          139.7217,
+          35.719500000000004
+        ],
         "day": 3
       }
     ]
@@ -1244,12 +1656,19 @@
     "startLocation": {
       "description": "FOOD Hub",
       "type": "Point",
-      "coordinates": [139.7117, 35.709500000000006],
+      "coordinates": [
+        139.7117,
+        35.709500000000006
+      ],
       "address": "food central location"
     },
     "ratingsAverage": 4.4,
     "ratingsQuantity": 5,
-    "images": ["food-2-1.jpg", "food-2-2.jpg", "food-2-3.jpg"],
+    "images": [
+      "food-2-1.jpg",
+      "food-2-2.jpg",
+      "food-2-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -1274,14 +1693,20 @@
         "_id": "69a550548fdc748c1beacb0c",
         "description": "food location A",
         "type": "Point",
-        "coordinates": [139.7317, 35.7295],
+        "coordinates": [
+          139.7317,
+          35.7295
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacb0d",
         "description": "food location B",
         "type": "Point",
-        "coordinates": [139.7517, 35.749500000000005],
+        "coordinates": [
+          139.7517,
+          35.749500000000005
+        ],
         "day": 3
       }
     ]
@@ -1291,12 +1716,19 @@
     "startLocation": {
       "description": "FOOD Hub",
       "type": "Point",
-      "coordinates": [139.7217, 35.719500000000004],
+      "coordinates": [
+        139.7217,
+        35.719500000000004
+      ],
       "address": "food central location"
     },
     "ratingsAverage": 4.8,
     "ratingsQuantity": 14,
-    "images": ["food-3-1.jpg", "food-3-2.jpg", "food-3-3.jpg"],
+    "images": [
+      "food-3-1.jpg",
+      "food-3-2.jpg",
+      "food-3-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -1307,7 +1739,9 @@
     "capacity": 9,
     "category": "food",
     "difficulty": "easy",
-    "guides": ["5c8a21d02f8fb814b56fa189"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189"
+    ],
     "price": 1027,
     "summary": "A curated food experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -1317,14 +1751,20 @@
         "_id": "69a550548fdc748c1beacb0f",
         "description": "food location A",
         "type": "Point",
-        "coordinates": [139.7517, 35.749500000000005],
+        "coordinates": [
+          139.7517,
+          35.749500000000005
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacb10",
         "description": "food location B",
         "type": "Point",
-        "coordinates": [139.7817, 35.779500000000006],
+        "coordinates": [
+          139.7817,
+          35.779500000000006
+        ],
         "day": 3
       }
     ]
@@ -1334,12 +1774,19 @@
     "startLocation": {
       "description": "FOOD Hub",
       "type": "Point",
-      "coordinates": [139.7317, 35.7295],
+      "coordinates": [
+        139.7317,
+        35.7295
+      ],
       "address": "food central location"
     },
     "ratingsAverage": 4.3,
     "ratingsQuantity": 11,
-    "images": ["food-4-1.jpg", "food-4-2.jpg", "food-4-3.jpg"],
+    "images": [
+      "food-4-1.jpg",
+      "food-4-2.jpg",
+      "food-4-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -1350,7 +1797,10 @@
     "capacity": 11,
     "category": "food",
     "difficulty": "medium",
-    "guides": ["5c8a21d02f8fb814b56fa189", "5c8a21f22f8fb814b56fa18a"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189",
+      "5c8a21f22f8fb814b56fa18a"
+    ],
     "price": 1751,
     "summary": "A curated food experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -1360,14 +1810,20 @@
         "_id": "69a550548fdc748c1beacb12",
         "description": "food location A",
         "type": "Point",
-        "coordinates": [139.7717, 35.7695],
+        "coordinates": [
+          139.7717,
+          35.7695
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacb13",
         "description": "food location B",
         "type": "Point",
-        "coordinates": [139.8117, 35.8095],
+        "coordinates": [
+          139.8117,
+          35.8095
+        ],
         "day": 3
       }
     ]
@@ -1377,12 +1833,19 @@
     "startLocation": {
       "description": "FOOD Hub",
       "type": "Point",
-      "coordinates": [139.7417, 35.7395],
+      "coordinates": [
+        139.7417,
+        35.7395
+      ],
       "address": "food central location"
     },
     "ratingsAverage": 4.7,
     "ratingsQuantity": 11,
-    "images": ["food-5-1.jpg", "food-5-2.jpg", "food-5-3.jpg"],
+    "images": [
+      "food-5-1.jpg",
+      "food-5-2.jpg",
+      "food-5-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -1407,14 +1870,20 @@
         "_id": "69a550548fdc748c1beacb15",
         "description": "food location A",
         "type": "Point",
-        "coordinates": [139.7917, 35.789500000000004],
+        "coordinates": [
+          139.7917,
+          35.789500000000004
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacb16",
         "description": "food location B",
         "type": "Point",
-        "coordinates": [139.8417, 35.8395],
+        "coordinates": [
+          139.8417,
+          35.8395
+        ],
         "day": 3
       }
     ]
@@ -1424,12 +1893,19 @@
     "startLocation": {
       "description": "FOOD Hub",
       "type": "Point",
-      "coordinates": [139.7517, 35.749500000000005],
+      "coordinates": [
+        139.7517,
+        35.749500000000005
+      ],
       "address": "food central location"
     },
     "ratingsAverage": 4.4,
     "ratingsQuantity": 13,
-    "images": ["food-6-1.jpg", "food-6-2.jpg", "food-6-3.jpg"],
+    "images": [
+      "food-6-1.jpg",
+      "food-6-2.jpg",
+      "food-6-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -1440,7 +1916,9 @@
     "capacity": 22,
     "category": "food",
     "difficulty": "easy",
-    "guides": ["5c8a21d02f8fb814b56fa189"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189"
+    ],
     "price": 979,
     "summary": "A curated food experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -1450,14 +1928,20 @@
         "_id": "69a550548fdc748c1beacb18",
         "description": "food location A",
         "type": "Point",
-        "coordinates": [139.8117, 35.8095],
+        "coordinates": [
+          139.8117,
+          35.8095
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacb19",
         "description": "food location B",
         "type": "Point",
-        "coordinates": [139.8717, 35.8695],
+        "coordinates": [
+          139.8717,
+          35.8695
+        ],
         "day": 3
       }
     ]
@@ -1467,12 +1951,19 @@
     "startLocation": {
       "description": "FOOD Hub",
       "type": "Point",
-      "coordinates": [139.7617, 35.7595],
+      "coordinates": [
+        139.7617,
+        35.7595
+      ],
       "address": "food central location"
     },
     "ratingsAverage": 4.6,
     "ratingsQuantity": 14,
-    "images": ["food-7-1.jpg", "food-7-2.jpg", "food-7-3.jpg"],
+    "images": [
+      "food-7-1.jpg",
+      "food-7-2.jpg",
+      "food-7-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -1483,7 +1974,10 @@
     "capacity": 18,
     "category": "food",
     "difficulty": "medium",
-    "guides": ["5c8a21d02f8fb814b56fa189", "5c8a21f22f8fb814b56fa18a"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189",
+      "5c8a21f22f8fb814b56fa18a"
+    ],
     "price": 2212,
     "summary": "A curated food experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -1493,14 +1987,20 @@
         "_id": "69a550548fdc748c1beacb1b",
         "description": "food location A",
         "type": "Point",
-        "coordinates": [139.83169999999998, 35.8295],
+        "coordinates": [
+          139.83169999999998,
+          35.8295
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacb1c",
         "description": "food location B",
         "type": "Point",
-        "coordinates": [139.9017, 35.8995],
+        "coordinates": [
+          139.9017,
+          35.8995
+        ],
         "day": 3
       }
     ]
@@ -1510,12 +2010,19 @@
     "startLocation": {
       "description": "FOOD Hub",
       "type": "Point",
-      "coordinates": [139.7717, 35.7695],
+      "coordinates": [
+        139.7717,
+        35.7695
+      ],
       "address": "food central location"
     },
     "ratingsAverage": 4.8,
     "ratingsQuantity": 6,
-    "images": ["food-8-1.jpg", "food-8-2.jpg", "food-8-3.jpg"],
+    "images": [
+      "food-8-1.jpg",
+      "food-8-2.jpg",
+      "food-8-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -1540,14 +2047,20 @@
         "_id": "69a550548fdc748c1beacb1e",
         "description": "food location A",
         "type": "Point",
-        "coordinates": [139.8517, 35.8495],
+        "coordinates": [
+          139.8517,
+          35.8495
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacb1f",
         "description": "food location B",
         "type": "Point",
-        "coordinates": [139.9317, 35.929500000000004],
+        "coordinates": [
+          139.9317,
+          35.929500000000004
+        ],
         "day": 3
       }
     ]
@@ -1557,12 +2070,19 @@
     "startLocation": {
       "description": "FOOD Hub",
       "type": "Point",
-      "coordinates": [139.7817, 35.779500000000006],
+      "coordinates": [
+        139.7817,
+        35.779500000000006
+      ],
       "address": "food central location"
     },
     "ratingsAverage": 4.9,
     "ratingsQuantity": 14,
-    "images": ["food-9-1.jpg", "food-9-2.jpg", "food-9-3.jpg"],
+    "images": [
+      "food-9-1.jpg",
+      "food-9-2.jpg",
+      "food-9-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -1573,7 +2093,9 @@
     "capacity": 13,
     "category": "food",
     "difficulty": "easy",
-    "guides": ["5c8a21d02f8fb814b56fa189"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189"
+    ],
     "price": 1451,
     "summary": "A curated food experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -1583,14 +2105,20 @@
         "_id": "69a550548fdc748c1beacb21",
         "description": "food location A",
         "type": "Point",
-        "coordinates": [139.8717, 35.8695],
+        "coordinates": [
+          139.8717,
+          35.8695
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacb22",
         "description": "food location B",
         "type": "Point",
-        "coordinates": [139.9617, 35.959500000000006],
+        "coordinates": [
+          139.9617,
+          35.959500000000006
+        ],
         "day": 3
       }
     ]
@@ -1600,12 +2128,19 @@
     "startLocation": {
       "description": "CRAFT Hub",
       "type": "Point",
-      "coordinates": [135.778, 35.0216],
+      "coordinates": [
+        135.778,
+        35.0216
+      ],
       "address": "craft central location"
     },
     "ratingsAverage": 4.6,
     "ratingsQuantity": 5,
-    "images": ["craft-1-1.jpg", "craft-1-2.jpg", "craft-1-3.jpg"],
+    "images": [
+      "craft-1-1.jpg",
+      "craft-1-2.jpg",
+      "craft-1-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -1616,7 +2151,10 @@
     "capacity": 20,
     "category": "craft",
     "difficulty": "medium",
-    "guides": ["5c8a21d02f8fb814b56fa189", "5c8a21f22f8fb814b56fa18a"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189",
+      "5c8a21f22f8fb814b56fa18a"
+    ],
     "price": 1424,
     "summary": "A curated craft experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -1626,14 +2164,20 @@
         "_id": "69a550548fdc748c1beacb24",
         "description": "craft location A",
         "type": "Point",
-        "coordinates": [135.788, 35.031600000000005],
+        "coordinates": [
+          135.788,
+          35.031600000000005
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacb25",
         "description": "craft location B",
         "type": "Point",
-        "coordinates": [135.798, 35.0416],
+        "coordinates": [
+          135.798,
+          35.0416
+        ],
         "day": 3
       }
     ]
@@ -1643,12 +2187,19 @@
     "startLocation": {
       "description": "CRAFT Hub",
       "type": "Point",
-      "coordinates": [135.788, 35.031600000000005],
+      "coordinates": [
+        135.788,
+        35.031600000000005
+      ],
       "address": "craft central location"
     },
     "ratingsAverage": 4.8,
     "ratingsQuantity": 10,
-    "images": ["craft-2-1.jpg", "craft-2-2.jpg", "craft-2-3.jpg"],
+    "images": [
+      "craft-2-1.jpg",
+      "craft-2-2.jpg",
+      "craft-2-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -1673,14 +2224,20 @@
         "_id": "69a550548fdc748c1beacb27",
         "description": "craft location A",
         "type": "Point",
-        "coordinates": [135.808, 35.0516],
+        "coordinates": [
+          135.808,
+          35.0516
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacb28",
         "description": "craft location B",
         "type": "Point",
-        "coordinates": [135.828, 35.071600000000004],
+        "coordinates": [
+          135.828,
+          35.071600000000004
+        ],
         "day": 3
       }
     ]
@@ -1690,12 +2247,19 @@
     "startLocation": {
       "description": "CRAFT Hub",
       "type": "Point",
-      "coordinates": [135.798, 35.0416],
+      "coordinates": [
+        135.798,
+        35.0416
+      ],
       "address": "craft central location"
     },
     "ratingsAverage": 4.9,
     "ratingsQuantity": 5,
-    "images": ["craft-3-1.jpg", "craft-3-2.jpg", "craft-3-3.jpg"],
+    "images": [
+      "craft-3-1.jpg",
+      "craft-3-2.jpg",
+      "craft-3-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -1706,7 +2270,9 @@
     "capacity": 15,
     "category": "craft",
     "difficulty": "easy",
-    "guides": ["5c8a21d02f8fb814b56fa189"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189"
+    ],
     "price": 481,
     "summary": "A curated craft experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -1716,14 +2282,20 @@
         "_id": "69a550548fdc748c1beacb2a",
         "description": "craft location A",
         "type": "Point",
-        "coordinates": [135.828, 35.071600000000004],
+        "coordinates": [
+          135.828,
+          35.071600000000004
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacb2b",
         "description": "craft location B",
         "type": "Point",
-        "coordinates": [135.858, 35.101600000000005],
+        "coordinates": [
+          135.858,
+          35.101600000000005
+        ],
         "day": 3
       }
     ]
@@ -1733,12 +2305,19 @@
     "startLocation": {
       "description": "CRAFT Hub",
       "type": "Point",
-      "coordinates": [135.808, 35.0516],
+      "coordinates": [
+        135.808,
+        35.0516
+      ],
       "address": "craft central location"
     },
     "ratingsAverage": 4.3,
     "ratingsQuantity": 8,
-    "images": ["craft-4-1.jpg", "craft-4-2.jpg", "craft-4-3.jpg"],
+    "images": [
+      "craft-4-1.jpg",
+      "craft-4-2.jpg",
+      "craft-4-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -1749,7 +2328,10 @@
     "capacity": 15,
     "category": "craft",
     "difficulty": "medium",
-    "guides": ["5c8a21d02f8fb814b56fa189", "5c8a21f22f8fb814b56fa18a"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189",
+      "5c8a21f22f8fb814b56fa18a"
+    ],
     "price": 337,
     "summary": "A curated craft experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -1759,14 +2341,20 @@
         "_id": "69a550548fdc748c1beacb2d",
         "description": "craft location A",
         "type": "Point",
-        "coordinates": [135.848, 35.0916],
+        "coordinates": [
+          135.848,
+          35.0916
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacb2e",
         "description": "craft location B",
         "type": "Point",
-        "coordinates": [135.888, 35.1316],
+        "coordinates": [
+          135.888,
+          35.1316
+        ],
         "day": 3
       }
     ]
@@ -1776,12 +2364,19 @@
     "startLocation": {
       "description": "CRAFT Hub",
       "type": "Point",
-      "coordinates": [135.818, 35.0616],
+      "coordinates": [
+        135.818,
+        35.0616
+      ],
       "address": "craft central location"
     },
     "ratingsAverage": 4.2,
     "ratingsQuantity": 12,
-    "images": ["craft-5-1.jpg", "craft-5-2.jpg", "craft-5-3.jpg"],
+    "images": [
+      "craft-5-1.jpg",
+      "craft-5-2.jpg",
+      "craft-5-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -1806,14 +2401,20 @@
         "_id": "69a550548fdc748c1beacb30",
         "description": "craft location A",
         "type": "Point",
-        "coordinates": [135.868, 35.1116],
+        "coordinates": [
+          135.868,
+          35.1116
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacb31",
         "description": "craft location B",
         "type": "Point",
-        "coordinates": [135.918, 35.1616],
+        "coordinates": [
+          135.918,
+          35.1616
+        ],
         "day": 3
       }
     ]
@@ -1823,12 +2424,19 @@
     "startLocation": {
       "description": "CRAFT Hub",
       "type": "Point",
-      "coordinates": [135.828, 35.071600000000004],
+      "coordinates": [
+        135.828,
+        35.071600000000004
+      ],
       "address": "craft central location"
     },
     "ratingsAverage": 4.3,
     "ratingsQuantity": 6,
-    "images": ["craft-6-1.jpg", "craft-6-2.jpg", "craft-6-3.jpg"],
+    "images": [
+      "craft-6-1.jpg",
+      "craft-6-2.jpg",
+      "craft-6-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -1839,7 +2447,9 @@
     "capacity": 19,
     "category": "craft",
     "difficulty": "easy",
-    "guides": ["5c8a21d02f8fb814b56fa189"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189"
+    ],
     "price": 595,
     "summary": "A curated craft experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -1849,14 +2459,20 @@
         "_id": "69a550548fdc748c1beacb33",
         "description": "craft location A",
         "type": "Point",
-        "coordinates": [135.888, 35.1316],
+        "coordinates": [
+          135.888,
+          35.1316
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacb34",
         "description": "craft location B",
         "type": "Point",
-        "coordinates": [135.948, 35.1916],
+        "coordinates": [
+          135.948,
+          35.1916
+        ],
         "day": 3
       }
     ]
@@ -1866,12 +2482,19 @@
     "startLocation": {
       "description": "CRAFT Hub",
       "type": "Point",
-      "coordinates": [135.838, 35.0816],
+      "coordinates": [
+        135.838,
+        35.0816
+      ],
       "address": "craft central location"
     },
     "ratingsAverage": 4.4,
     "ratingsQuantity": 11,
-    "images": ["craft-7-1.jpg", "craft-7-2.jpg", "craft-7-3.jpg"],
+    "images": [
+      "craft-7-1.jpg",
+      "craft-7-2.jpg",
+      "craft-7-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -1882,7 +2505,10 @@
     "capacity": 12,
     "category": "craft",
     "difficulty": "medium",
-    "guides": ["5c8a21d02f8fb814b56fa189", "5c8a21f22f8fb814b56fa18a"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189",
+      "5c8a21f22f8fb814b56fa18a"
+    ],
     "price": 1731,
     "summary": "A curated craft experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -1892,14 +2518,20 @@
         "_id": "69a550548fdc748c1beacb36",
         "description": "craft location A",
         "type": "Point",
-        "coordinates": [135.908, 35.1516],
+        "coordinates": [
+          135.908,
+          35.1516
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacb37",
         "description": "craft location B",
         "type": "Point",
-        "coordinates": [135.978, 35.2216],
+        "coordinates": [
+          135.978,
+          35.2216
+        ],
         "day": 3
       }
     ]
@@ -1909,12 +2541,19 @@
     "startLocation": {
       "description": "CRAFT Hub",
       "type": "Point",
-      "coordinates": [135.848, 35.0916],
+      "coordinates": [
+        135.848,
+        35.0916
+      ],
       "address": "craft central location"
     },
     "ratingsAverage": 4.4,
     "ratingsQuantity": 8,
-    "images": ["craft-8-1.jpg", "craft-8-2.jpg", "craft-8-3.jpg"],
+    "images": [
+      "craft-8-1.jpg",
+      "craft-8-2.jpg",
+      "craft-8-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -1939,14 +2578,20 @@
         "_id": "69a550548fdc748c1beacb39",
         "description": "craft location A",
         "type": "Point",
-        "coordinates": [135.928, 35.1716],
+        "coordinates": [
+          135.928,
+          35.1716
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacb3a",
         "description": "craft location B",
         "type": "Point",
-        "coordinates": [136.008, 35.2516],
+        "coordinates": [
+          136.008,
+          35.2516
+        ],
         "day": 3
       }
     ]
@@ -1956,12 +2601,19 @@
     "startLocation": {
       "description": "CRAFT Hub",
       "type": "Point",
-      "coordinates": [135.858, 35.101600000000005],
+      "coordinates": [
+        135.858,
+        35.101600000000005
+      ],
       "address": "craft central location"
     },
     "ratingsAverage": 4.3,
     "ratingsQuantity": 13,
-    "images": ["craft-9-1.jpg", "craft-9-2.jpg", "craft-9-3.jpg"],
+    "images": [
+      "craft-9-1.jpg",
+      "craft-9-2.jpg",
+      "craft-9-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -1972,7 +2624,9 @@
     "capacity": 20,
     "category": "craft",
     "difficulty": "easy",
-    "guides": ["5c8a21d02f8fb814b56fa189"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189"
+    ],
     "price": 808,
     "summary": "A curated craft experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -1982,14 +2636,20 @@
         "_id": "69a550548fdc748c1beacb3c",
         "description": "craft location A",
         "type": "Point",
-        "coordinates": [135.948, 35.1916],
+        "coordinates": [
+          135.948,
+          35.1916
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacb3d",
         "description": "craft location B",
         "type": "Point",
-        "coordinates": [136.038, 35.281600000000005],
+        "coordinates": [
+          136.038,
+          35.281600000000005
+        ],
         "day": 3
       }
     ]
@@ -1999,12 +2659,19 @@
     "startLocation": {
       "description": "TECH Hub",
       "type": "Point",
-      "coordinates": [-122.40939999999999, 37.7849],
+      "coordinates": [
+        -122.40939999999999,
+        37.7849
+      ],
       "address": "tech central location"
     },
     "ratingsAverage": 4.8,
     "ratingsQuantity": 8,
-    "images": ["tech-1-1.jpg", "tech-1-2.jpg", "tech-1-3.jpg"],
+    "images": [
+      "tech-1-1.jpg",
+      "tech-1-2.jpg",
+      "tech-1-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -2015,7 +2682,10 @@
     "capacity": 19,
     "category": "tech",
     "difficulty": "medium",
-    "guides": ["5c8a21d02f8fb814b56fa189", "5c8a21f22f8fb814b56fa18a"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189",
+      "5c8a21f22f8fb814b56fa18a"
+    ],
     "price": 963,
     "summary": "A curated tech experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -2025,14 +2695,20 @@
         "_id": "69a550548fdc748c1beacb3f",
         "description": "tech location A",
         "type": "Point",
-        "coordinates": [-122.3994, 37.794900000000005],
+        "coordinates": [
+          -122.3994,
+          37.794900000000005
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacb40",
         "description": "tech location B",
         "type": "Point",
-        "coordinates": [-122.3894, 37.8049],
+        "coordinates": [
+          -122.3894,
+          37.8049
+        ],
         "day": 3
       }
     ]
@@ -2042,12 +2718,19 @@
     "startLocation": {
       "description": "TECH Hub",
       "type": "Point",
-      "coordinates": [-122.3994, 37.794900000000005],
+      "coordinates": [
+        -122.3994,
+        37.794900000000005
+      ],
       "address": "tech central location"
     },
     "ratingsAverage": 4.3,
     "ratingsQuantity": 14,
-    "images": ["tech-2-1.jpg", "tech-2-2.jpg", "tech-2-3.jpg"],
+    "images": [
+      "tech-2-1.jpg",
+      "tech-2-2.jpg",
+      "tech-2-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -2072,14 +2755,20 @@
         "_id": "69a550548fdc748c1beacb42",
         "description": "tech location A",
         "type": "Point",
-        "coordinates": [-122.37939999999999, 37.8149],
+        "coordinates": [
+          -122.37939999999999,
+          37.8149
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacb43",
         "description": "tech location B",
         "type": "Point",
-        "coordinates": [-122.3594, 37.834900000000005],
+        "coordinates": [
+          -122.3594,
+          37.834900000000005
+        ],
         "day": 3
       }
     ]
@@ -2089,12 +2778,19 @@
     "startLocation": {
       "description": "TECH Hub",
       "type": "Point",
-      "coordinates": [-122.3894, 37.8049],
+      "coordinates": [
+        -122.3894,
+        37.8049
+      ],
       "address": "tech central location"
     },
     "ratingsAverage": 4.5,
     "ratingsQuantity": 14,
-    "images": ["tech-3-1.jpg", "tech-3-2.jpg", "tech-3-3.jpg"],
+    "images": [
+      "tech-3-1.jpg",
+      "tech-3-2.jpg",
+      "tech-3-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -2105,7 +2801,9 @@
     "capacity": 13,
     "category": "tech",
     "difficulty": "easy",
-    "guides": ["5c8a21d02f8fb814b56fa189"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189"
+    ],
     "price": 1149,
     "summary": "A curated tech experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -2115,14 +2813,20 @@
         "_id": "69a550548fdc748c1beacb45",
         "description": "tech location A",
         "type": "Point",
-        "coordinates": [-122.3594, 37.834900000000005],
+        "coordinates": [
+          -122.3594,
+          37.834900000000005
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacb46",
         "description": "tech location B",
         "type": "Point",
-        "coordinates": [-122.32939999999999, 37.864900000000006],
+        "coordinates": [
+          -122.32939999999999,
+          37.864900000000006
+        ],
         "day": 3
       }
     ]
@@ -2132,12 +2836,19 @@
     "startLocation": {
       "description": "TECH Hub",
       "type": "Point",
-      "coordinates": [-122.37939999999999, 37.8149],
+      "coordinates": [
+        -122.37939999999999,
+        37.8149
+      ],
       "address": "tech central location"
     },
     "ratingsAverage": 4.2,
     "ratingsQuantity": 13,
-    "images": ["tech-4-1.jpg", "tech-4-2.jpg", "tech-4-3.jpg"],
+    "images": [
+      "tech-4-1.jpg",
+      "tech-4-2.jpg",
+      "tech-4-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -2148,7 +2859,10 @@
     "capacity": 8,
     "category": "tech",
     "difficulty": "medium",
-    "guides": ["5c8a21d02f8fb814b56fa189", "5c8a21f22f8fb814b56fa18a"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189",
+      "5c8a21f22f8fb814b56fa18a"
+    ],
     "price": 793,
     "summary": "A curated tech experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -2158,14 +2872,20 @@
         "_id": "69a550548fdc748c1beacb48",
         "description": "tech location A",
         "type": "Point",
-        "coordinates": [-122.3394, 37.8549],
+        "coordinates": [
+          -122.3394,
+          37.8549
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacb49",
         "description": "tech location B",
         "type": "Point",
-        "coordinates": [-122.29939999999999, 37.8949],
+        "coordinates": [
+          -122.29939999999999,
+          37.8949
+        ],
         "day": 3
       }
     ]
@@ -2175,12 +2895,19 @@
     "startLocation": {
       "description": "TECH Hub",
       "type": "Point",
-      "coordinates": [-122.3694, 37.8249],
+      "coordinates": [
+        -122.3694,
+        37.8249
+      ],
       "address": "tech central location"
     },
     "ratingsAverage": 4.8,
     "ratingsQuantity": 9,
-    "images": ["tech-5-1.jpg", "tech-5-2.jpg", "tech-5-3.jpg"],
+    "images": [
+      "tech-5-1.jpg",
+      "tech-5-2.jpg",
+      "tech-5-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -2205,14 +2932,20 @@
         "_id": "69a550548fdc748c1beacb4b",
         "description": "tech location A",
         "type": "Point",
-        "coordinates": [-122.3194, 37.874900000000004],
+        "coordinates": [
+          -122.3194,
+          37.874900000000004
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacb4c",
         "description": "tech location B",
         "type": "Point",
-        "coordinates": [-122.26939999999999, 37.9249],
+        "coordinates": [
+          -122.26939999999999,
+          37.9249
+        ],
         "day": 3
       }
     ]
@@ -2222,12 +2955,19 @@
     "startLocation": {
       "description": "TECH Hub",
       "type": "Point",
-      "coordinates": [-122.3594, 37.834900000000005],
+      "coordinates": [
+        -122.3594,
+        37.834900000000005
+      ],
       "address": "tech central location"
     },
     "ratingsAverage": 4.3,
     "ratingsQuantity": 8,
-    "images": ["tech-6-1.jpg", "tech-6-2.jpg", "tech-6-3.jpg"],
+    "images": [
+      "tech-6-1.jpg",
+      "tech-6-2.jpg",
+      "tech-6-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -2238,7 +2978,9 @@
     "capacity": 18,
     "category": "tech",
     "difficulty": "easy",
-    "guides": ["5c8a21d02f8fb814b56fa189"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189"
+    ],
     "price": 1297,
     "summary": "A curated tech experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -2248,14 +2990,20 @@
         "_id": "69a550548fdc748c1beacb4e",
         "description": "tech location A",
         "type": "Point",
-        "coordinates": [-122.29939999999999, 37.8949],
+        "coordinates": [
+          -122.29939999999999,
+          37.8949
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacb4f",
         "description": "tech location B",
         "type": "Point",
-        "coordinates": [-122.23939999999999, 37.9549],
+        "coordinates": [
+          -122.23939999999999,
+          37.9549
+        ],
         "day": 3
       }
     ]
@@ -2265,12 +3013,19 @@
     "startLocation": {
       "description": "TECH Hub",
       "type": "Point",
-      "coordinates": [-122.3494, 37.8449],
+      "coordinates": [
+        -122.3494,
+        37.8449
+      ],
       "address": "tech central location"
     },
     "ratingsAverage": 4.5,
     "ratingsQuantity": 10,
-    "images": ["tech-7-1.jpg", "tech-7-2.jpg", "tech-7-3.jpg"],
+    "images": [
+      "tech-7-1.jpg",
+      "tech-7-2.jpg",
+      "tech-7-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -2281,7 +3036,10 @@
     "capacity": 21,
     "category": "tech",
     "difficulty": "medium",
-    "guides": ["5c8a21d02f8fb814b56fa189", "5c8a21f22f8fb814b56fa18a"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189",
+      "5c8a21f22f8fb814b56fa18a"
+    ],
     "price": 1189,
     "summary": "A curated tech experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -2291,14 +3049,20 @@
         "_id": "69a550548fdc748c1beacb51",
         "description": "tech location A",
         "type": "Point",
-        "coordinates": [-122.2794, 37.9149],
+        "coordinates": [
+          -122.2794,
+          37.9149
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacb52",
         "description": "tech location B",
         "type": "Point",
-        "coordinates": [-122.2094, 37.9849],
+        "coordinates": [
+          -122.2094,
+          37.9849
+        ],
         "day": 3
       }
     ]
@@ -2308,12 +3072,19 @@
     "startLocation": {
       "description": "TECH Hub",
       "type": "Point",
-      "coordinates": [-122.3394, 37.8549],
+      "coordinates": [
+        -122.3394,
+        37.8549
+      ],
       "address": "tech central location"
     },
     "ratingsAverage": 4.9,
     "ratingsQuantity": 8,
-    "images": ["tech-8-1.jpg", "tech-8-2.jpg", "tech-8-3.jpg"],
+    "images": [
+      "tech-8-1.jpg",
+      "tech-8-2.jpg",
+      "tech-8-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -2338,14 +3109,20 @@
         "_id": "69a550548fdc748c1beacb54",
         "description": "tech location A",
         "type": "Point",
-        "coordinates": [-122.2594, 37.9349],
+        "coordinates": [
+          -122.2594,
+          37.9349
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacb55",
         "description": "tech location B",
         "type": "Point",
-        "coordinates": [-122.1794, 38.014900000000004],
+        "coordinates": [
+          -122.1794,
+          38.014900000000004
+        ],
         "day": 3
       }
     ]
@@ -2355,12 +3132,19 @@
     "startLocation": {
       "description": "TECH Hub",
       "type": "Point",
-      "coordinates": [-122.32939999999999, 37.864900000000006],
+      "coordinates": [
+        -122.32939999999999,
+        37.864900000000006
+      ],
       "address": "tech central location"
     },
     "ratingsAverage": 4.6,
     "ratingsQuantity": 11,
-    "images": ["tech-9-1.jpg", "tech-9-2.jpg", "tech-9-3.jpg"],
+    "images": [
+      "tech-9-1.jpg",
+      "tech-9-2.jpg",
+      "tech-9-3.jpg"
+    ],
     "timeSlots": [
       "2024-05-10T09:00:00.000Z",
       "2024-06-15T09:00:00.000Z",
@@ -2371,7 +3155,9 @@
     "capacity": 14,
     "category": "tech",
     "difficulty": "easy",
-    "guides": ["5c8a21d02f8fb814b56fa189"],
+    "guides": [
+      "5c8a21d02f8fb814b56fa189"
+    ],
     "price": 551,
     "summary": "A curated tech experience designed for hands-on learning and exploration.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -2381,14 +3167,20 @@
         "_id": "69a550548fdc748c1beacb57",
         "description": "tech location A",
         "type": "Point",
-        "coordinates": [-122.23939999999999, 37.9549],
+        "coordinates": [
+          -122.23939999999999,
+          37.9549
+        ],
         "day": 1
       },
       {
         "_id": "69a550548fdc748c1beacb58",
         "description": "tech location B",
         "type": "Point",
-        "coordinates": [-122.1494, 38.044900000000005],
+        "coordinates": [
+          -122.1494,
+          38.044900000000005
+        ],
         "day": 3
       }
     ]
