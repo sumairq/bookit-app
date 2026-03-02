@@ -321,6 +321,36 @@ body {
   outline-offset: 3px;
 }
 
+.btn-select {
+  margin: 6px;
+}
+
+.btn-active {
+  background-color: var(--primary-dark);
+  color: white;
+}
+
+.categories-container {
+  flex-direction: column;
+  justify-items: space-between;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.categories-container > h2 {
+  font-size: 3.5rem;
+}
+
+.categories {
+  width: 500px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 50px;
+}
+
 .header {
   background-color: var(--primary-dark);
   padding: 0 5rem;
