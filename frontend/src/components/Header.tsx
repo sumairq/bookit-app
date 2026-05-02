@@ -1,62 +1,58 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useAuth } from "../context/useAuth";
-
-// interface User {
-//   name: string;
-//   photo: string;
-// }
-
-// interface HeaderProps {
-//   user?: User | null;
-//   onLogout?: () => void;
-// }
+import { getUserAvatar } from "../utils/images";
 
 export default function Header() {
   const { user, logout } = useAuth();
+
   return (
-    <header className="header">
-      {/* Left navigation */}
-      <nav className="nav nav--tours">
-        <Link className="nav__el" to="/">
-          All tours
+    <header className="site-header">
+      <div className="site-header__bar">
+        <nav className="nav nav--left" aria-label="Primary">
+          <NavLink className="nav__link" to="/" end>
+            Discover
+          </NavLink>
+          {user && (
+            <NavLink className="nav__link" to="/my-experiences">
+              My Trips
+            </NavLink>
+          )}
+        </nav>
+
+        <Link className="brand" to="/" aria-label="Bookit — home">
+          <span className="brand__mark" aria-hidden="true">B</span>
+          <span className="brand__word">
+            book<em>it</em>
+          </span>
         </Link>
-      </nav>
 
-      {/* Logo */}
-      <div className="header__logo">
-        <img src="/img/logo-white.png" alt="Natours logo" />
+        <nav className="nav nav--right" aria-label="Account">
+          {user ? (
+            <>
+              <button className="nav__link" onClick={logout}>
+                Sign out
+              </button>
+              <Link className="nav__link" to="/me">
+                <img
+                  className="nav__avatar"
+                  src={getUserAvatar(user.photo, 60)}
+                  alt=""
+                />
+                <span>{user.name.split(" ")[0]}</span>
+              </Link>
+            </>
+          ) : (
+            <>
+              <Link className="nav__link" to="/login">
+                Sign in
+              </Link>
+              <Link className="nav__link nav__link--cta" to="/signup">
+                Join Bookit
+              </Link>
+            </>
+          )}
+        </nav>
       </div>
-
-      {/* User navigation */}
-      <nav className="nav nav--user">
-        {user ? (
-          <>
-            {/* Log out button */}
-            <button className="nav__el nav__el--logout" onClick={logout}>
-              Log out
-            </button>
-
-            {/* User profile */}
-            <Link className="nav__el" to="/me">
-              <img
-                className="nav__user-img"
-                src={`/img/users/${user.photo}`}
-                alt={`Photo of ${user.name}`}
-              />
-              <span>{user.name.split(" ")[0]}</span>
-            </Link>
-          </>
-        ) : (
-          <>
-            <Link className="nav__el" to="/login">
-              Log in
-            </Link>
-            <Link className="nav__el nav__el--cta" to="/signup">
-              Sign up
-            </Link>
-          </>
-        )}
-      </nav>
     </header>
   );
 }

@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\sumair\\\\Desktop\\\\bookit-app\" -Force)",
+      "Bash(Select-Object -Property Name, PSIsContainer)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\sumair\\\\Desktop\\\\bookit-app\\\\backend\\\\views\" -Recurse -Filter \"*.pug\")",
+      "Bash(Select-Object FullName)",
+      "Bash(npm run *)"
+    ]
+  }
+}
