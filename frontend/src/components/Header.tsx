@@ -17,6 +17,11 @@ export default function Header() {
               My Trips
             </NavLink>
           )}
+          {user && (user.role === "admin" || user.role === "lead-guide") && (
+            <NavLink className="nav__link" to="/admin">
+              Admin
+            </NavLink>
+          )}
         </nav>
 
         <Link className="brand" to="/" aria-label="Bookit — home">

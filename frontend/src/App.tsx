@@ -2,11 +2,18 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Overview from "./pages/Overview";
 import "./App.css";
 import MainLayout from "./layout/MainLayout";
+import AdminLayout from "./layout/AdminLayout";
 import ExperienceDetails from "./pages/ExperienceDetails";
 import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
 import AccountPage from "./pages/AccountPage";
 import ErrorPage from "./pages/ErrorPage";
+import RequireRole from "./components/RequireRole";
+import DashboardHome from "./pages/admin/DashboardHome";
+import ExperiencesAdmin from "./pages/admin/ExperiencesAdmin";
+import GuidesAdmin from "./pages/admin/GuidesAdmin";
+import UsersAdmin from "./pages/admin/UsersAdmin";
+import BookingsAdmin from "./pages/admin/BookingsAdmin";
 
 function App() {
   return (
@@ -19,8 +26,19 @@ function App() {
           <Route path="/experience/:slug" element={<ExperienceDetails />} />
           <Route path="/me" element={<AccountPage />} />
           <Route path="/my-experiences" element={<Overview />} />
-          <Route path="*" element={<ErrorPage message="Page not found." />} />
         </Route>
+
+        <Route element={<RequireRole roles={["admin", "lead-guide"]} />}>
+          <Route element={<AdminLayout />}>
+            <Route path="/admin" element={<DashboardHome />} />
+            <Route path="/admin/experiences" element={<ExperiencesAdmin />} />
+            <Route path="/admin/guides" element={<GuidesAdmin />} />
+            <Route path="/admin/users" element={<UsersAdmin />} />
+            <Route path="/admin/bookings" element={<BookingsAdmin />} />
+          </Route>
+        </Route>
+
+        <Route path="*" element={<ErrorPage message="Page not found." />} />
       </Routes>
     </BrowserRouter>
   );

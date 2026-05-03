@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 /* index.css — minimal reset; full system lives in App.css */
 *,
 *::before,

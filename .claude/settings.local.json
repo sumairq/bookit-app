@@ -7,7 +7,10 @@
       "Bash(Select-Object FullName)",
       "Bash(npm run *)",
       "Bash(node -e \"require\\('./app.js'\\); console.log\\('OK'\\)\")",
-      "Bash(node -e \"require\\('dotenv'\\).config\\({path: './config.env'}\\); require\\('./app.js'\\); console.log\\('OK - app loaded'\\);\")"
+      "Bash(node -e \"require\\('dotenv'\\).config\\({path: './config.env'}\\); require\\('./app.js'\\); console.log\\('OK - app loaded'\\);\")",
+      "Bash(npm install *)",
+      "Bash(npx tsc *)",
+      "Bash(echo \"exit=$?\")"
     ]
   }
 }
