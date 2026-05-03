@@ -16,16 +16,9 @@ const globalErrorHandler = require('./controllers/errorController.js');
 const experienceRouter = require('./routes/experienceRoutes.js');
 const userRouter = require('./routes/userRoutes.js');
 const reviewRouter = require('./routes/reviewRoutes.js');
-const viewRouter = require('./routes/viewRoutes.js');
 const bookingRouter = require('./routes/bookingRoutes.js');
 
 const app = express();
-
-/* ======================
-   VIEW ENGINE
-====================== */
-app.set('view engine', 'pug');
-app.set('views', path.join(__dirname, 'views'));
 
 /* ======================
    GLOBAL MIDDLEWARES
@@ -118,9 +111,6 @@ app.use((req, res, next) => {
 /* ======================
    ROUTES
 ====================== */
-
-// PUG SSR ROUTES
-app.use('/', viewRouter);
 
 // API ROUTES
 app.use('/api/v1/experiences', experienceRouter);
