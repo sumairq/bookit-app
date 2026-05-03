@@ -44,7 +44,7 @@ router
   .get(experienceController.getAllExperiences)
   .post(
     authController.protect,
-    authController.restrictTo('admin', 'lead-guide'),
+    authController.restrictTo('admin'),
     experienceController.createExperience
   );
 
@@ -57,14 +57,14 @@ router
   .get(experienceController.getExperience)
   .patch(
     authController.protect,
-    authController.restrictTo('admin', 'lead-guide'),
+    authController.restrictTo('admin'),
     experienceController.uploadExperienceImages,
     experienceController.resizeExperienceImages,
     experienceController.updateExperience
   )
   .delete(
     authController.protect,
-    authController.restrictTo('admin', 'lead-guide'),
+    authController.restrictTo('admin'),
     experienceController.deleteExperience
   );
 

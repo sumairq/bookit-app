@@ -17,6 +17,7 @@ const experienceRouter = require('./routes/experienceRoutes.js');
 const userRouter = require('./routes/userRoutes.js');
 const reviewRouter = require('./routes/reviewRoutes.js');
 const bookingRouter = require('./routes/bookingRoutes.js');
+const adminRouter = require('./routes/adminRoutes.js');
 
 const app = express();
 
@@ -117,6 +118,7 @@ app.use('/api/v1/experiences', experienceRouter);
 app.use('/api/v1/users', userRouter);
 app.use('/api/v1/reviews', reviewRouter);
 app.use('/api/v1/bookings', bookingRouter);
+app.use('/api/v1/admin', adminRouter);
 
 /* ======================
    ERROR HANDLING
