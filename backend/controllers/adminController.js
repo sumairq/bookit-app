@@ -154,9 +154,12 @@ exports.getGuides = catchAsync(async (req, res) => {
   const limit = Math.min(parseInt(req.query.limit, 10) || 20, 100);
   const skip = (page - 1) * limit;
 
-  const roleFilter = req.query.role
-    ? { role: req.query.role }
-    : { role: { $in: ['guide', 'lead-guide'] } };
+  const roleFilter = {
+    active: { $ne: false },
+    ...(req.query.role
+      ? { role: req.query.role }
+      : { role: { $in: ['guide', 'lead-guide'] } }),
+  };
 
   const [guides, total] = await Promise.all([
     User.aggregate([
@@ -244,6 +247,86 @@ exports.getGuideById = catchAsync(async (req, res, next) => {
               experiences.length,
       },
     },
+  });
+});
+
+exports.getExperiences = catchAsync(async (req, res) => {
+  const page = Math.max(parseInt(req.query.page, 10) || 1, 1);
+  const limit = Math.min(parseInt(req.query.limit, 10) || 20, 100);
+  const skip = (page - 1) * limit;
+
+  const filter = {};
+  if (req.query.category) filter.category = req.query.category;
+  if (req.query.search) {
+    filter.name = new RegExp(req.query.search, 'i');
+  }
+
+  const [experiences, total] = await Promise.all([
+    Experience.find(filter)
+      .select(
+        'name slug category duration capacity price priceDiscount ratingsAverage ratingsQuantity summary description imageCover'
+      )
+      .sort({ name: 1 })
+      .skip(skip)
+      .limit(limit),
+    Experience.countDocuments(filter),
+  ]);
+
+  res.status(200).json({
+    status: 'success',
+    results: experiences.length,
+    pagination: { page, limit, total, pages: Math.ceil(total / limit) },
+    data: { experiences },
+  });
+});
+
+exports.getUsers = catchAsync(async (req, res) => {
+  const page = Math.max(parseInt(req.query.page, 10) || 1, 1);
+  const limit = Math.min(parseInt(req.query.limit, 10) || 20, 100);
+  const skip = (page - 1) * limit;
+
+  const filter = {};
+  if (req.query.role) filter.role = req.query.role;
+  if (req.query.search) {
+    const rx = new RegExp(req.query.search, 'i');
+    filter.$or = [{ name: rx }, { email: rx }];
+  }
+
+  const [users, total] = await Promise.all([
+    User.find(filter)
+      .select('name email role photo')
+      .sort({ name: 1 })
+      .skip(skip)
+      .limit(limit),
+    User.countDocuments(filter),
+  ]);
+
+  res.status(200).json({
+    status: 'success',
+    results: users.length,
+    pagination: { page, limit, total, pages: Math.ceil(total / limit) },
+    data: { users },
+  });
+});
+
+exports.getBookings = catchAsync(async (req, res) => {
+  const page = Math.max(parseInt(req.query.page, 10) || 1, 1);
+  const limit = Math.min(parseInt(req.query.limit, 10) || 20, 100);
+  const skip = (page - 1) * limit;
+
+  const [bookings, total] = await Promise.all([
+    Booking.find()
+      .sort({ createdAt: -1 })
+      .skip(skip)
+      .limit(limit),
+    Booking.countDocuments(),
+  ]);
+
+  res.status(200).json({
+    status: 'success',
+    results: bookings.length,
+    pagination: { page, limit, total, pages: Math.ceil(total / limit) },
+    data: { bookings },
   });
 });
 

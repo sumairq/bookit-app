@@ -52,3 +52,53 @@ export interface Pagination {
   total: number;
   pages: number;
 }
+
+export interface AdminUser {
+  _id: string;
+  name: string;
+  email: string;
+  role: "user" | "guide" | "lead-guide" | "admin";
+  photo: string;
+}
+
+export interface AdminBooking {
+  _id: string;
+  price: number;
+  paid: boolean;
+  createdAt: string;
+  user: { _id: string; name: string; email: string } | null;
+  experience: { _id: string; name: string } | null;
+}
+
+export interface GuideDetail {
+  guide: {
+    _id: string;
+    name: string;
+    email: string;
+    role: "guide" | "lead-guide";
+    photo: string;
+  };
+  experiences: AdminExperience[];
+  metrics: {
+    experienceCount: number;
+    bookingCount: number;
+    revenue: number;
+    avgRating: number;
+  };
+}
+
+export interface AdminExperience {
+  _id: string;
+  name: string;
+  slug: string;
+  category: string;
+  duration: number;
+  capacity: number;
+  price: number;
+  priceDiscount?: number;
+  ratingsAverage: number;
+  ratingsQuantity: number;
+  summary: string;
+  description: string;
+  imageCover: string;
+}

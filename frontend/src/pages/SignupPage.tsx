@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
+import { ArrowUpRight } from "lucide-react";
 import { useAuth } from "../context/useAuth";
 
 export default function SignupPage() {
@@ -23,7 +24,9 @@ export default function SignupPage() {
       navigate("/");
     } catch (err) {
       const e = err as { response?: { data?: { message?: string } } };
-      setError(e?.response?.data?.message ?? "Sign up failed. Please try again.");
+      setError(
+        e?.response?.data?.message ?? "Sign up failed. Please try again.",
+      );
     } finally {
       setLoading(false);
     }
@@ -124,9 +127,12 @@ export default function SignupPage() {
               </div>
             </div>
 
-            <button className="btn btn--ember btn--lg btn--block" disabled={loading}>
+            <button
+              className="btn btn--ember btn--lg btn--block"
+              disabled={loading}
+            >
               {loading ? "Creating…" : "Create account"}
-              <span aria-hidden="true">↗</span>
+              <ArrowUpRight size={16} aria-hidden="true" />
             </button>
           </form>
 

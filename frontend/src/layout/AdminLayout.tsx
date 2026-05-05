@@ -8,6 +8,7 @@ const NAV = [
   { to: "/admin/guides", label: "Guides" },
   { to: "/admin/users", label: "Users" },
   { to: "/admin/bookings", label: "Bookings" },
+  { to: "/", label: "Back To Homepage" },
 ];
 
 export default function AdminLayout() {
@@ -29,7 +30,14 @@ export default function AdminLayout() {
           className="rounded-md p-2 text-slate-700 hover:bg-slate-100"
           aria-label="Toggle navigation"
         >
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
             <line x1="4" y1="6" x2="20" y2="6" />
             <line x1="4" y1="12" x2="20" y2="12" />
             <line x1="4" y1="18" x2="20" y2="18" />
@@ -47,13 +55,18 @@ export default function AdminLayout() {
           } fixed inset-y-0 left-0 z-40 w-64 transform border-r border-slate-200 bg-white transition-transform lg:static lg:translate-x-0`}
         >
           <div className="flex h-16 items-center border-b border-slate-200 px-6">
-            <span className="text-lg font-semibold tracking-tight">Bookit Admin</span>
+            <span className="text-lg font-semibold tracking-tight">
+              Bookit Admin
+            </span>
           </div>
 
           <nav className="px-3 py-4">
             <ul className="space-y-1">
               {NAV.map((item) => (
-                <li key={item.to}>
+                <li
+                  key={item.to}
+                  className="last:border-t last:border-slate-200 last:pt-2 last:mt-2"
+                >
                   <NavLink
                     to={item.to}
                     end={item.end}
@@ -61,7 +74,7 @@ export default function AdminLayout() {
                     className={({ isActive }) =>
                       `block rounded-md px-3 py-2 text-sm font-medium transition-colors ${
                         isActive
-                          ? "bg-slate-900 text-white"
+                          ? "bg-slate-900 !text-white"
                           : "text-slate-700 hover:bg-slate-100"
                       }`
                     }
@@ -75,7 +88,9 @@ export default function AdminLayout() {
 
           <div className="absolute inset-x-0 bottom-0 border-t border-slate-200 p-4">
             <div className="mb-3">
-              <p className="truncate text-sm font-medium text-slate-900">{user?.name}</p>
+              <p className="truncate text-sm font-medium text-slate-900">
+                {user?.name}
+              </p>
               <p className="truncate text-xs text-slate-500">
                 {user?.role === "admin" ? "Administrator" : "Lead Guide"}
               </p>

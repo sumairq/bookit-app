@@ -12,6 +12,7 @@ import RequireRole from "./components/RequireRole";
 import DashboardHome from "./pages/admin/DashboardHome";
 import ExperiencesAdmin from "./pages/admin/ExperiencesAdmin";
 import GuidesAdmin from "./pages/admin/GuidesAdmin";
+import GuideDetail from "./pages/admin/GuideDetail";
 import UsersAdmin from "./pages/admin/UsersAdmin";
 import BookingsAdmin from "./pages/admin/BookingsAdmin";
 
@@ -33,6 +34,7 @@ function App() {
             <Route path="/admin" element={<DashboardHome />} />
             <Route path="/admin/experiences" element={<ExperiencesAdmin />} />
             <Route path="/admin/guides" element={<GuidesAdmin />} />
+            <Route path="/admin/guides/:id" element={<GuideDetail />} />
             <Route path="/admin/users" element={<UsersAdmin />} />
             <Route path="/admin/bookings" element={<BookingsAdmin />} />
           </Route>

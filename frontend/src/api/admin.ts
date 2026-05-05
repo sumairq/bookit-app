@@ -6,6 +6,10 @@ import type {
   BookingsTrendPoint,
   GuideSummary,
   Pagination,
+  AdminUser,
+  AdminBooking,
+  AdminExperience,
+  GuideDetail,
 } from "../types/Admin";
 
 export async function fetchOverviewStats(): Promise<OverviewStats> {
@@ -43,4 +47,57 @@ export async function fetchGuides(params: {
 
 export async function promoteGuide(id: string): Promise<void> {
   await api.patch(`/admin/users/${id}/promote`);
+}
+
+export async function fetchGuideById(id: string): Promise<GuideDetail> {
+  const res = await api.get(`/admin/guides/${id}`);
+  return res.data.data;
+}
+
+export async function fetchUsers(params: {
+  page?: number;
+  limit?: number;
+  role?: AdminUser["role"];
+  search?: string;
+} = {}): Promise<{ users: AdminUser[]; pagination: Pagination }> {
+  const res = await api.get("/admin/users", { params });
+  return { users: res.data.data.users, pagination: res.data.pagination };
+}
+
+export async function fetchBookings(params: {
+  page?: number;
+  limit?: number;
+} = {}): Promise<{ bookings: AdminBooking[]; pagination: Pagination }> {
+  const res = await api.get("/admin/bookings", { params });
+  return { bookings: res.data.data.bookings, pagination: res.data.pagination };
+}
+
+export interface ExperiencesPage {
+  experiences: AdminExperience[];
+  pagination: Pagination;
+}
+
+export async function fetchExperiencesPaged(params: {
+  page?: number;
+  limit?: number;
+  category?: string;
+  search?: string;
+} = {}): Promise<ExperiencesPage> {
+  const res = await api.get("/admin/experiences", { params });
+  return {
+    experiences: res.data.data.experiences,
+    pagination: res.data.pagination,
+  };
+}
+
+export async function updateExperience(
+  id: string,
+  body: Partial<AdminExperience>
+): Promise<AdminExperience> {
+  const res = await api.patch(`/experiences/${id}`, body);
+  return res.data.data.data;
+}
+
+export async function deleteExperience(id: string): Promise<void> {
+  await api.delete(`/experiences/${id}`);
 }

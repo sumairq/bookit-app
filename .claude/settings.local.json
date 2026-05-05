@@ -10,7 +10,9 @@
       "Bash(node -e \"require\\('dotenv'\\).config\\({path: './config.env'}\\); require\\('./app.js'\\); console.log\\('OK - app loaded'\\);\")",
       "Bash(npm install *)",
       "Bash(npx tsc *)",
-      "Bash(echo \"exit=$?\")"
+      "Bash(echo \"exit=$?\")",
+      "Bash(node -e \"require\\('dotenv'\\).config\\({path: './config.env'}\\); require\\('./app.js'\\); console.log\\('OK'\\);\")",
+      "Bash(node dev-data/create-admin.js)"
     ]
   }
 }

@@ -15,6 +15,10 @@ router.get('/stats/bookings-trend', adminController.getBookingsTrend);
 router.get('/guides', adminController.getGuides);
 router.get('/guides/:id', adminController.getGuideById);
 
+router.get('/users', adminController.getUsers);
+router.get('/bookings', adminController.getBookings);
+router.get('/experiences', adminController.getExperiences);
+
 router.patch(
   '/users/:id/promote',
   authController.restrictTo('admin'),
